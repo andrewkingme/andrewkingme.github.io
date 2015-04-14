@@ -1,0 +1,15 @@
+title: andrewking(me)
+url: http://andrewkingme.com
+timezone: Etc/UTC
+markdown: kramdown
+highlighter: pygments
+permalink: /news/:year/:month/:day/:title/
+collections:
+  work:
+    output: true
+    permalink: /work/:path/
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+sass:
+  style: compressed

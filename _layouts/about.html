@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+{% include head.html %}
+<body>
+  {% include header.html %}
+  
+  <section>
+    <div class="grid grid-pad">
+      <div class="col-4-12">
+        <span class="title">{{ page.title }}</span>
+      </div>
+      <div class="col-8-12">
+        {{ content }}
+      </div>
+    </div>
+    <div class="grid grid-pad">
+      <div class="col-4-12">
+        <span class="title">mailto:andrew</span>
+      </div>
+      <div class="col-8-12">
+        <form action="http://getsimpleform.com/messages?form_api_token=c5d54eca68668ba840d236733980d48b" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='http://andrewkingme.com/about/sent/index.html' />
+          <!-- all your input fields here.... -->
+          <input name='Name' type="test" class="form-control" id="name" placeholder="Name"><br>
+          <input name='Email' type="email" class="form-control" id="email" placeholder="Email"><br>
+          <textarea name='Message' type="text" class="form-control" id="message" placeholder="Message" rows='10'></textarea><br>
+          <button type="submit" class="form-button">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

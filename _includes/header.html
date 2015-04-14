@@ -1,0 +1,30 @@
+<section class="header_directory hide-on-mobile">
+  <div class="grid grid-pad">
+    <div class="col-4-12">
+      Build Date
+    </div>
+    <div class="col-8-12">
+      {{ site.time }}
+    </div>
+  </div>
+</section>
+
+<header>
+  <div class="grid grid-pad">
+    <div class="col-4-12">
+      <a href="/" class="header_title">andrewking(me)</a>
+    </div>
+    <div class="col-8-12">
+      <a href="/about/" class="header_link">/about</a>
+      <br>
+      <a href="/news/" class="header_link">/news</a>
+      <br>
+      <br>
+      <a href="/work/" class="header_link">/work</a>
+        {% for link in site.data.taglist %}
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ link.url }}" class="header_link">{{ link.name }}</a>
+        {% endfor %}
+      <br>
+    </div>
+  </div>
+</header>

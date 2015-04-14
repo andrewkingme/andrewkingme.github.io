@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+{% include head.html %}
+<body>
+  {% include header.html %}
+  
+  <section>
+    <div class="grid grid-pad">
+      <div class="col-4-12">
+        <span class="title">{{ page.title }}</span>
+        {% if page.date %}
+          <p>{{ page.date | date_to_string }}</p>
+        {% endif %}
+        {% if page.tags %}
+          <p>
+            {% for tag in page.tags %}
+              {% if tag != "all" %}
+                <a href="/{{ page.section }}/{{ tag | output }}/">#{{ tag | output }}</a>
+              {% endif %}
+            {% endfor %}
+          </p>  
+        {% endif %}
+      </div>
+      <div class="col-8-12">
+        {{ content }}
+        {% include article_signoff.html %}
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

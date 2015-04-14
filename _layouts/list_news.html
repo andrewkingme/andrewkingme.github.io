@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+{% include head.html %}
+<body>
+  {% include header.html %}
+
+  <section>
+    <div class="grid grid-pad">
+      <div class="col-4-12">
+        <span class="title">{{ page.title }}</span>
+      </div>
+      <div class="col-8-12">
+        {% for post in site.posts %}
+          {% if post.tags contains page.tag %}
+            {{ post.date | date_to_string}} <a href="{{ post.url }}">{{ post.title }}</a><br>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
