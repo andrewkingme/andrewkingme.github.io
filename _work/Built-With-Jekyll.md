@@ -88,3 +88,5 @@ article.html _layout for Jekyll build:
 </html>
 {% endraw %}
 {% endhighlight %}
+
+Browse the full source at: [https://github.com/andrewkingme/andrewkingme.github.io](https://github.com/andrewkingme/andrewkingme.github.io)
