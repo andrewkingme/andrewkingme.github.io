@@ -70,15 +70,23 @@ img {
 /* Header */
 
 header {
-  background-color: $color-5;
-  background-image: url('/img/assets/grid.png');
-  background-repeat: repeat;
-  background-size: auto;
-  background-position: center;
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(bottom left, $color-1 0%, $color-2 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(bottom left, $color-1 0%, $color-2 100%);
+  /* Opera */ 
+  background-image: -o-linear-gradient(bottom left, $color-1 0%, $color-2 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, $color-1), color-stop(1, $color-2));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(bottom left, $color-1 0%, $color-2 100%);
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to top right, $color-1 0%, $color-2 100%);
+  
   border-top: 1px solid $color-2;
   border-bottom: 1px solid $color-2;
 }
-
+  
 .header_title {
   color: $color-4;
   text-decoration: none;
