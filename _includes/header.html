@@ -1,5 +1,5 @@
 <section>
-  <div class="grid grid-pad builddate builddate-mobile">
+  <div class="grid grid-pad header-mobile builddate">
     <div class="col-4-12">
       <a href="https://github.com/andrewkingme/andrewkingme.github.io" class="header_builddate">BuildDate_GitHub</a>
     </div>
@@ -10,8 +10,8 @@
 </section>
 
 <header>
-  <div class="grid grid-pad">
-    <div class="col-4-12">
+  <div class="grid grid-pad header-mobile">
+    <div class="col-4-12 header_title">
       <a href="/" class="header_title">andrewking(me)</a>
     </div>
     <div class="col-8-12">
@@ -24,7 +24,6 @@
         {% for link in site.data.taglist %}
           <br><a href="{{ link.url }}" class="header_link">{{ link.name }}</a>
         {% endfor %}
-      <br>
     </div>
   </div>
 </header>
