@@ -14,6 +14,7 @@
 
 [class*='col-'] {
 	float: left;
+    padding-right: 20px;
 }
 
 [class*='col-']:last-of-type {
@@ -38,7 +39,7 @@
 	padding: 20px 20px 20px 20px;
 }
 
-.grid-pad-builddate {
+.builddate {
 	padding-bottom: 0px;
 }
 
@@ -140,13 +141,17 @@
 		float: none;
 		margin-left: 0px;
 		margin-right: 0px;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-top: 0px;
+		margin-bottom: 20px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
   
-  .hide-on-mobile {
+    .builddate-mobile > [class*='col-'] {
+        margin-bottom: 0px;
+    }
+  
+    .hide-on-mobile {
 		display: none !important;
 		width: 0;
 		height: 0;
