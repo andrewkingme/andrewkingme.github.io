@@ -126,7 +126,7 @@
 	width: 58.33%
 }
 
-@media handheld, only screen and (max-width: 768px), screen and (max-device-width: 768px), print {
+@media handheld, only screen and (max-width: 768px), print {
 	.grid {
 		width: 100%;
 		min-width: 0;
