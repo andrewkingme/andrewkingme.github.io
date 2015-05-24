@@ -146,5 +146,3 @@ End Function
 {% endhighlight %}
 
 ![Task Management in Microsoft Outlook with Visual Basic](/img/work/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-002.png)
-<br>
-*Result*
