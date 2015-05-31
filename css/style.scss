@@ -4,13 +4,14 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
-$font-stack: Lato, Helvetica, sans-serif;
+$font-stack: Lato, Helvetica, Arial, sans-serif;
 $color-1: #fff;
-$color-2: #e5e5e5; /* Background */
+$color-2: #e8e8e8; /* Background */
 $color-3: #777; /* Primary Font Color */
 $color-4: #000;
 $color-5: #f8f8f8; /* Code Background */
 $color-6: #aaa; /* Form Text */
+$color-7: #ff4a4a; /* Header Color */
 
 /* Layout */
 
@@ -27,7 +28,7 @@ body {
 a {
   color: $color-4;
   text-decoration: none;
-  border-bottom: 1px solid $color-4;
+  border-bottom: 1px solid $color-2;
 }
 
 p {
@@ -70,12 +71,15 @@ img {
 /* Header */
 
 header {
-  border-bottom: 1px solid $color-2;
+
   margin-bottom: 20px;
+  padding-bottom: 100px;
+  background: url(/img/assets/hero.png);
+  background-size: 100%;
 }
   
 .header_title {
-  color: $color-4;
+  color: $color-1;
   text-decoration: none;
   font-size: 24px;
   border-bottom: none;
@@ -84,10 +88,12 @@ header {
 
 .header_link {
   text-decoration: none;
+  color: $color-1;
+  border-color: $color-7;
 }
 
 .header_builddate {
-  color: $color-2;
+  color: $color-7;
   border-bottom: none;
 }
 
