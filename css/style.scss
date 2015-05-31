@@ -96,22 +96,22 @@ header {
   border-bottom: none;
 }
 
-/* List */
+/* Collections */
 
-.list {
+.collections {
   padding-top: 20px;
   padding-bottom: 20px;
   min-height: 144px;
   border-top: 1px solid $color-2;
 }
 
-.list:first-child {
+.collections:first-child {
   padding-top: 0;
   min-height: 124px;
   border: none;
 }
 
-.list_image {
+.collections_image {
   float: left;
   margin-right: 20px;
   background-repeat: no-repeat;
@@ -122,12 +122,12 @@ header {
   width: 191px;
 }
 
-.list_content {
+.collections_content {
   overflow: hidden;
   color: $color-3;
 }
 
-.list_content p {
+.collections_content p {
   margin-bottom: 0px;
 }
 

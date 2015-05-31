@@ -12,9 +12,9 @@
       <div class="col-8-12">
         {% for post in site.[page.collection] %}
           {% if post.tags contains page.tag %}
-            <div class="list">
-              <a href="{{ post.url }}"><div class="list_image" style="background-image:url('{{ post.cover }}');"></div></a>
-              <div class="list_content">
+            <div class="collections">
+              <a href="{{ post.url }}"><div class="collections_image" style="background-image:url('{{ post.cover }}');"></div></a>
+              <div class="collections_content">
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 {% if post.tags %}
                   <p>
