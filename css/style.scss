@@ -53,6 +53,11 @@ img {
   max-width: 100%;
 }
 
+table {
+  width: 100%;
+  border-style: none;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -129,13 +134,6 @@ header {
 
 .collections_content p {
   margin-bottom: 0px;
-}
-
-/* News */
-
-.news_date {
-  display: inline-block;
-  width: 150px;
 }
 
 /* Code Snippets */
