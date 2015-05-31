@@ -10,7 +10,8 @@
         <span class="title">{{ page.title }}</span>
       </div>
       <div class="col-8-12">
-        {% for post in site.[page.collection] %}
+        {% assign collection = site.[page.collection] | sort: 'date' | reverse %}
+        {% for post in collection %}
           {% if post.tags contains page.tag %}
             <div class="collections">
               <a href="{{ post.url }}"><div class="collections_image" style="background-image:url('{{ post.cover }}');"></div></a>
