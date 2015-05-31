@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+{% include head.html %}
+<body>
+  {% include header.html %}
+  
+  <section>
+    <div class="grid grid-pad">
+      <div class="col-4-12">
+        <span class="title">{{ page.title }}</span>
+      </div>
+      <div class="col-4-12">
+        <p><a href="https://twitter.com/andrewkingme/favorites">Favorites</a></p>
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/andrewkingme/favorites" data-widget-id="602566183628374016" data-chrome="noheader" height="400">Favorite Tweets by @andrewkingme</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="col-4-12">
+        <p><a href="https://twitter.com/andrewkingme">@andrewkingme</a></p>
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/andrewkingme" data-widget-id="602565985904697344" data-chrome="noheader" height="400">Tweets by @andrewkingme</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
