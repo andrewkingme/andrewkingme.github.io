@@ -12,7 +12,7 @@
       <div class="col-8-12">
         {% for post in site.posts %}
           {% if post.tags contains page.tag %}
-            {{ post.date | date_to_string}} <a href="{{ post.url }}">{{ post.title }}</a><br>
+            <span class="news_date">{{ post.date | date_to_string}}</span><a href="{{ post.url }}">{{ post.title }}</a><br>
           {% endif %}
         {% endfor %}
       </div>
