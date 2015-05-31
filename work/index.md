@@ -5,4 +5,5 @@ collection: work
 tag: all
 redirect_from: 
   - /consulting/
+  - /
 ---
