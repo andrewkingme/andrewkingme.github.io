@@ -89,4 +89,4 @@ article.html _layout for Jekyll build:
 {% endraw %}
 {% endhighlight %}
 
-Browse the full source at: [https://github.com/andrewkingme/andrewkingme.github.io](https://github.com/andrewkingme/andrewkingme.github.io)
+Browse the source code at [https://github.com/andrewkingme/andrewkingme.github.io](https://github.com/andrewkingme/andrewkingme.github.io).
