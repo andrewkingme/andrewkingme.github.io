@@ -7,11 +7,11 @@
 $font-stack: Lato, Helvetica, Arial, sans-serif;
 $color-1: #fff;
 $color-2: #e8e8e8; /* Background */
-$color-3: #777; /* Primary Font Color */
+$color-3: #666; /* Primary Font Color */
 $color-4: #000;
 $color-5: #f8f8f8; /* Code Background */
 $color-6: #aaa; /* Form Text */
-$color-7: #ff4a4a; /* Header Color */
+$color-7: #999; /* Header Color */
 
 /* Layout */
 
@@ -76,10 +76,8 @@ table {
 /* Header */
 
 header {
-  margin-bottom: 20px;
-  padding-bottom: 100px;
-  background: url(/img/assets/gradient.png);
-  background-size: 100% 600px;
+  background: $color-3;
+  padding: 10px 0px 20px 0px;
 }
   
 .header_title {
@@ -96,7 +94,14 @@ header {
   border-color: $color-7;
 }
 
-.header_builddate {
+.builddate {
+  background-color: #fff;
+  border-bottom: 1px solid $color-2;
+  margin-bottom: 20px;
+  color: $color-7;
+}
+
+.builddate_link {
   color: $color-7;
   border-bottom: none;
 }
