@@ -76,8 +76,9 @@ table {
 /* Header */
 
 header {
-  background: $color-3;
+  background-color: $color-3;
   padding: 10px 0px 20px 0px;
+  margin-bottom: 20px;
 }
   
 .header_title {
@@ -92,18 +93,6 @@ header {
   text-decoration: none;
   color: $color-1;
   border-color: $color-7;
-}
-
-.builddate {
-  background-color: #fff;
-  border-bottom: 1px solid $color-2;
-  margin-bottom: 20px;
-  color: $color-7;
-}
-
-.builddate_link {
-  color: $color-7;
-  border-bottom: none;
 }
 
 /* Collections */
