@@ -6,9 +6,8 @@ cover: /img/work/Adaptive Component Panelization-Cover.png
 section: work
 tags:
   - all
-  - adaptivecomponents
-  - parametric
   - revit
+  - adaptivecomponents
 ---
 
 Adaptive component family development of an (A) always planar 4-sided panel with (B) parametric apertures that will (C) populate on a divided surface in Autodesk Revit.
