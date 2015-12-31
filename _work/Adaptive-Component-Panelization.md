@@ -19,3 +19,6 @@ Adaptive component family development of an (A) always planar 4-sided panel with
 
 ![Adaptive Component Panelization](/img/work/Adaptive-Component-Panelization-002.png)
 *Panels in Elevation*
+
+![Adaptive Component Panelization](/img/work/Adaptive-Component-Panelization-003.png)
+*Panels Along Surface*
