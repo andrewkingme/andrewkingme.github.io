@@ -3,7 +3,7 @@ layout: article
 title: "Fractal Geometry"
 date: 2014-10-23 05:32:00
 cover: /img/work/Fractal-Geometry-Cover.png
-section: work
+collection: work
 tags:
   - all
   - maya

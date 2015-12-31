@@ -9,6 +9,9 @@ collections:
   work:
     output: true
     permalink: /work/:path/
+  hike:
+    output: true
+    permalink: /hike/:path/
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from

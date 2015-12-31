@@ -2,7 +2,7 @@
 layout: article
 title: "Hello World"
 date: 2014-06-05 01:46:00
-section: news
+collection: news
 tags:
   - all
   - welcome

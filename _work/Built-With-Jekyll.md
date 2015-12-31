@@ -3,7 +3,7 @@ layout: article
 title: "Built With Jekyll"
 date: 2014-07-17 06:57:00
 cover: /img/work/Built-With-Jekyll-Cover.png
-section: work
+collection: work
 tags:
   - all
   - code

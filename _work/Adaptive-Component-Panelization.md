@@ -3,7 +3,7 @@ layout: article
 title: "Adaptive Component Panelization"
 date: 2015-06-25 01:14:00
 cover: /img/work/Adaptive Component Panelization-Cover.png
-section: work
+collection: work
 tags:
   - all
   - revit

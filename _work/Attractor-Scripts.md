@@ -3,7 +3,7 @@ layout: article
 title: "Attractor Scripts"
 date: 2014-06-12 22:04:00
 cover: /img/work/Attractor-Scripts-Cover.png
-section: work
+collection: work
 tags:
   - all
   - code

@@ -3,7 +3,7 @@ layout: article
 title: "Maya and a MAKE Controller: Form Creation Using Programmable Sensors"
 date: 2014-10-21 01:31:00
 cover: /img/work/Maya-and-a-MAKE-Controller-Cover.png
-section: work
+collection: work
 tags:
   - all
   - code

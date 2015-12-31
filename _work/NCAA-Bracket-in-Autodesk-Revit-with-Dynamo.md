@@ -3,7 +3,7 @@ layout: article
 title: "NCAA Bracket in Autodesk Revit with Dynamo"
 date: 2015-03-21 04:02:00
 cover: /img/work/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo-Cover.png
-section: work
+collection: work
 tags:
   - all
   - visualprogramming

@@ -3,7 +3,7 @@ layout: article
 title: "Task Management in Microsoft Outlook with Visual Basic"
 date: 2014-06-05 08:01:00
 cover: /img/work/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-Cover.png
-section: work
+collection: work
 tags:
   - all
   - code
