@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.1" xmlns:trails="http://www.google.com/kml/trails/1.0">
   <Document>
-    <name>RK_kml _2015-05-17_1455.kml</name>
+    <name>Bommer Canyon and Turtle Ridge</name>
     <Placemark>
-      <name>Hiking 5/17/15 2:55 pm</name>
+      <name>Bommer Canyon and Turtle Ridge</name>
         <Style>
           <LineStyle>
-            <color>ff0000ff</color>
-            <width>4</width>
+            <color>ff323232</color>
+            <width>2</width>
           </LineStyle>
         </Style>
       <MultiGeometry>

@@ -1,8 +1,9 @@
 ---
 layout: article
-title: "Hike 1"
+title: "Bommer Canyon and Turtle Ridge"
 date: 2015-12-31 00:31:00
 cover: /img/hike/Blank.png
+kml: /kml/hike/Bommer-Canyon-and-Turtle-Ridge.kml
 collection: hike
 tags:
   - all
@@ -10,3 +11,5 @@ tags:
 ---
 
 ![Hike 1](/img/hike/Blank.png)
+
+{% include googlemaps.html %}
