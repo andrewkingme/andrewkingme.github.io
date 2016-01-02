@@ -6,8 +6,8 @@
       <name>Bommer Canyon and Turtle Ridge</name>
         <Style>
           <LineStyle>
-            <color>ff323232</color>
-            <width>2</width>
+            <color>ff0000ff</color>
+            <width>4</width>
           </LineStyle>
         </Style>
       <MultiGeometry>
