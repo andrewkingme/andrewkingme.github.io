@@ -15,7 +15,7 @@ function initMap() {
   });
   
     var ctaLayer = new google.maps.KmlLayer({
-    url: '{{ page.kml }}',
+    url: '{{ site.url}}{{ page.kml }}',
     map: map
   });
 }
