@@ -2,7 +2,7 @@
 layout: article
 title: "Task Management in Microsoft Outlook with Visual Basic"
 date: 2014-06-05 08:01:00
-cover: /img/work/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-Cover.png
+cover: /work/img/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-Cover.png
 collection: work
 tags:
   - all
@@ -15,7 +15,7 @@ Visual Basic for Applications (Macro) code to count tasks in Microsoft Outlook.
 
 <!--more-->
 
-![Task Management in Microsoft Outlook with Visual Basic](/img/work/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-001.png)
+![Task Management in Microsoft Outlook with Visual Basic](/{{ page.collection }}/img/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-001.png)
 *Tasks in Microsoft Outlook, WWP Task Report Button (Upper Right)*
 
 WWP Task Report for Outlook (Visual Basic for Applications Code):
@@ -145,4 +145,4 @@ Public Function HoursMinsMsg(TotalMinutes As Long) As String
 End Function
 {% endhighlight %}
 
-![Task Management in Microsoft Outlook with Visual Basic](/img/work/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-002.png)
+![Task Management in Microsoft Outlook with Visual Basic](/{{ page.collection }}/img/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-002.png)

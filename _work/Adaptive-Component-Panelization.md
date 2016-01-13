@@ -2,7 +2,7 @@
 layout: article
 title: "Adaptive Component Panelization"
 date: 2015-06-25 01:14:00
-cover: /img/work/Adaptive Component Panelization-Cover.png
+cover: /work/img/Adaptive Component Panelization-Cover.png
 collection: work
 tags:
   - all
@@ -14,11 +14,11 @@ Adaptive component family development of an (A) always planar 4-sided panel with
 
 <!--more-->
 
-![Adaptive Component Panelization](/img/work/Adaptive-Component-Panelization-001.png)
+![Adaptive Component Panelization](/{{ page.collection }}/img/Adaptive-Component-Panelization-001.png)
 *Adaptive Component Family*
 
-![Adaptive Component Panelization](/img/work/Adaptive-Component-Panelization-002.png)
+![Adaptive Component Panelization](/{{ page.collection }}/img/Adaptive-Component-Panelization-002.png)
 *Panels in Elevation*
 
-![Adaptive Component Panelization](/img/work/Adaptive-Component-Panelization-003.png)
+![Adaptive Component Panelization](/{{ page.collection }}/img/Adaptive-Component-Panelization-003.png)
 *Panels Along Surface*

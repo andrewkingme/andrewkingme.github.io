@@ -1,14 +1,14 @@
 - name:   "#code"
-  url:    /work/code/
+  url:    /work/tag/code/
 
 - name:   "#visualprogramming"
-  url:    /work/visualprogramming/
+  url:    /work/tag/visualprogramming/
   
 - name:   "#revit"
-  url:    /work/revit/
+  url:    /work/tag/revit/
 
 - name:   "#maya"
-  url:    /work/maya/
+  url:    /work/tag/maya/
   
 - name:   "#sciarc"
-  url:    /work/sciarc/
+  url:    /work/tag/sciarc/

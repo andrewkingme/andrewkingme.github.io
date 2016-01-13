@@ -2,7 +2,7 @@
 layout: article
 title: "Built With Jekyll"
 date: 2014-07-17 06:57:00
-cover: /img/work/Built-With-Jekyll-Cover.png
+cover: /work/img/Built-With-Jekyll-Cover.png
 collection: work
 tags:
   - all
@@ -15,7 +15,7 @@ andrewking(me) is hosted from [Jekyll](http://jekyllrb.com) source on [GitHub Pa
 
 <!--more-->
 
-![Built With Jekyll](/img/work/Built-With-Jekyll-001.png)
+![Built With Jekyll](/{{ page.collection }}/img/Built-With-Jekyll-001.png)
 *Summary of GitHub Pull Requests, Issues Opened, and Commits.*
 
 Resources: [Jekyll](http://jekyllrb.com), [GitHub Pages](http://pages.github.com), [kramdown](http://kramdown.gettalong.org), [Sass](http://sass-lang.com), [Pygments](http://pygments.org), [Simple Grid](http://thisisdallas.github.io/Simple-Grid/), [Google Fonts](http://www.google.com/fonts)<br>
@@ -42,7 +42,7 @@ andrewking(me) is hosted from [Jekyll](http://jekyllrb.com) source on [GitHub Pa
 
 <!--more-->
 
-![Built With Jekyll](/img/work/Built-With-Jekyll-001.png)
+![Built With Jekyll](/{{ page.collection }}/img/Built-With-Jekyll-001.png)
 *Summary of GitHub Pull Requests, Issues Opened, and Commits.*
 
 Resources: [Jekyll](http://jekyllrb.com), [GitHub Pages](http://pages.github.com), [kramdown](http://kramdown.gettalong.org), [Sass](http://sass-lang.com), [Pygments](http://pygments.org), [Simple Grid](http://thisisdallas.github.io/Simple-Grid/), [Google Fonts](http://www.google.com/fonts)<br>

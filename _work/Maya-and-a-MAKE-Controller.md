@@ -2,7 +2,7 @@
 layout: article
 title: "Maya and a MAKE Controller: Form Creation Using Programmable Sensors"
 date: 2014-10-21 01:31:00
-cover: /img/work/Maya-and-a-MAKE-Controller-Cover.png
+cover: /work/img/Maya-and-a-MAKE-Controller-Cover.png
 collection: work
 tags:
   - all
@@ -15,16 +15,16 @@ Flow of Information: [Input Sensors] to [Breadboard] to [MAKE Controller] to [US
 
 <!--more-->
 
-![Maya and a MAKE Controller](/img/work/Maya-and-a-MAKE-Controller-001.png)
+![Maya and a MAKE Controller](/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-001.png)
 *Input Sensors, Breadboard, and Make Controller*
 
 <p>
 <div class="videoWrapper">
-<video autoplay loop muted poster="/img/work/Maya-and-a-MAKE-Controller-002.png">
-  <source src="/img/work/Maya-and-a-MAKE-Controller-002.mp4" type="video/mp4">
-  <source src="/img/work/Maya-and-a-MAKE-Controller-002.webm" type="video/webm">
-  <source src="/img/work/Maya-and-a-MAKE-Controller-002.ogg" type="video/ogg">
-  <img src="/img/work/Maya-and-a-MAKE-Controller-002.png" alt="Maya and a MAKE Controller" />
+<video autoplay loop muted poster="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.png">
+  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.mp4" type="video/mp4">
+  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.webm" type="video/webm">
+  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.ogg" type="video/ogg">
+  <img src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.png" alt="Maya and a MAKE Controller" />
 </video>
 </div>
 <em>mchelper, Flash Connector, and MEL Script in Maya</em>
@@ -62,11 +62,11 @@ $count1++;
 
 <p>
 <div class="videoWrapper">
-<video autoplay loop muted poster="/img/work/Maya-and-a-MAKE-Controller-003.png">
-  <source src="/img/work/Maya-and-a-MAKE-Controller-003.mp4" type="video/mp4">
-  <source src="/img/work/Maya-and-a-MAKE-Controller-003.webm" type="video/webm">
-  <source src="/img/work/Maya-and-a-MAKE-Controller-003.ogg" type="video/ogg">
-  <img src="/img/work/Maya-and-a-MAKE-Controller-003.png" alt="Maya and a MAKE Controller" />
+<video autoplay loop muted poster="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.png">
+  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.mp4" type="video/mp4">
+  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.webm" type="video/webm">
+  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.ogg" type="video/ogg">
+  <img src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.png" alt="Maya and a MAKE Controller" />
 </video>
 </div>
 <em>Screen Capture of Curation in Maya</em>

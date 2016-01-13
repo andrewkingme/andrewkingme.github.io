@@ -2,7 +2,7 @@
 layout: article
 title: "NCAA Bracket in Autodesk Revit with Dynamo"
 date: 2015-03-21 04:02:00
-cover: /img/work/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo-Cover.png
+cover: /work/img/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo-Cover.png
 collection: work
 tags:
   - all
@@ -15,8 +15,8 @@ NCAA bracket in Autodesk Revit with [Dynamo](http://dynamobim.com). Inspired by 
 
 <!--more-->
 
-![NCAA Bracket in Autodesk Revit with Dynamo](/img/work/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo-002.png)
+![NCAA Bracket in Autodesk Revit with Dynamo](/{{ page.collection }}/img/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo-002.png)
 *Custom Node*
 
-![NCAA Bracket in Autodesk Revit with Dynamo](/img/work/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo-001.png)
+![NCAA Bracket in Autodesk Revit with Dynamo](/{{ page.collection }}/img/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo-001.png)
 *NCAA Bracket in Dynamo*
