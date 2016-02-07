@@ -3,7 +3,7 @@ description: andrewking(me) is hosted from Jekyll source on GitHub Pages. Browse
 url: http://andrewkingme.com
 timezone: Etc/UTC
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /news/:year/:month/:day/:title/
 collections:
   work:

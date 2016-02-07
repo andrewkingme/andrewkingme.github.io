@@ -20,7 +20,7 @@ Visual Basic for Applications (Macro) code to count tasks in Microsoft Outlook.
 
 WWP Task Report for Outlook (Visual Basic for Applications Code):
 
-{% highlight VB.NET %}
+{% highlight vb %}
 'WWP Task Report for Outlook
 'Version 0.2
 'Coded by Andrew King
