@@ -46,7 +46,7 @@ Part 1 of the graph pulls in all of the revision clouds within the active docume
 
 ### Custom Python Node
 
-Revit does not automatically report the Sheet Number or Sheet Name to a revision cloud parameter, so a custom Python node was required to match up the elements and views. A similar process was nested in this code to match legend views to sheets.
+Revit does not automatically report the Sheet Number or Sheet Name to a revision cloud parameter, so a custom Python node was required to match up the elements and views.
 
 {% highlight python %}
 # Python Node for Dynamo
