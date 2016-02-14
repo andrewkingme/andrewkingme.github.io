@@ -1,5 +1,6 @@
 <div id="map"></div>
 <script>
+var map;
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -9,10 +10,10 @@ function initMap() {
     mapTypeControl: true,
   });
 
-  var ctaLayer = new google.maps.KmlLayer({
-    url: '{{ page.kml }}',
-    map: map
-  });
+var ctaLayer = new google.maps.KmlLayer({
+  url: '{{ page.kml }}',
+  map: map
+});
 }
 
 </script>
