@@ -2,19 +2,17 @@
 <kml xmlns="http://earth.google.com/kml/2.1" xmlns:trails="http://www.google.com/kml/trails/1.0">
   <Document>
     <name>Bommer Ridge and Moro Ridge</name>
-    <description>Bommer Ridge and Moro Ridge</description>
-
-    <Style id="hike">
-      <LineStyle>
-        <color>ff0000ff</color>
-        <width>4</width>
-      </LineStyle>
-
     <Placemark>
       <name>Bommer Ridge and Moro Ridge</name>
-      <styleUrl>#hike</styleUrl>
-      <LineString>
-        <altitudeMode>relative</altitudeMode>
+        <Style>
+          <LineStyle>
+            <color>ff0000ff</color>
+            <width>4</width>
+          </LineStyle>
+        </Style>
+      <MultiGeometry>
+        <LineString>
+          <tessellate>1</tessellate>
           <coordinates>
 -117.801603,33.605735,300.8892496392496
 -117.801441,33.605716,300.37260358688934
@@ -589,8 +587,9 @@
 -117.801441,33.605724,301.24813311688314
 -117.80151,33.605768,301.8160482374768
 -117.801566,33.605774,302.2096320346321
-        </coordinates>
-      </LineString>
+          </coordinates>
+        </LineString>
+      </MultiGeometry>
     </Placemark>
   </Document>
 </kml>
