@@ -1,24 +1,23 @@
 ---
 layout: article
-title: "Bommer Canyon and Turtle Ridge"
-date: 2015-12-31 00:31:00
-cover: /hike/img/Blank.png
+title: "Bommer Ridge and Moro Ridge"
+date: 2016-01-03 00:31:00
+cover: /hike/img/Bommer-Ridge-and-Moro-Ridge-Cover.jpg
 kml: /hike/kml/Bommer-Canyon-and-Turtle-Ridge.kml
-carousel:
-  - /img/IMG_4783.jpg
-  - /img/IMG_4788.jpg
-  - /img/IMG_4790.jpg
-  - /img/IMG_4816.jpg
-  - /img/IMG_4835.jpg
-  - /img/IMG_4837.jpg
 collection: hike
 tags:
   - all
   - orangecounty
+  - lagunacoast
 ---
 
-{% include googlemaps.html %}
-*GPS Data from 2016/XX/XX Hike*
+![Bommer Ridge and Moro Ridge](/{{ page.collection }}/img/Bommer-Ridge-and-Moro-Ridge-001.jpg)
 
-![Bommer Canyon and Turtle Ridge](/{{ page.collection }}/img/Laguna%20Coast%20Wilderness%20Park%208.5x11%20(PK00083711)%2010-26-2015.png)
-*Laguna Coast Wilderness Park*
+<!--more-->
+
+{% include googlemaps.html %}
+*GPS Data from 2016/01/02 Hike*
+
+![Bommer Ridge and Moro Ridge](/{{ page.collection }}/img/Bommer-Ridge-and-Moro-Ridge-002.jpg)
+![Bommer Ridge and Moro Ridge](/{{ page.collection }}/img/Bommer-Ridge-and-Moro-Ridge-003.jpg)
+![Bommer Ridge and Moro Ridge](/{{ page.collection }}/img/Bommer-Ridge-and-Moro-Ridge-004.jpg)
