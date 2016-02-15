@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Bommer Ridge and Moro Ridge"
-date: 2016-01-03 00:31:00
+date: 2016-02-15 00:13:00
 cover: /hike/img/Bommer-Ridge-and-Moro-Ridge-Cover.jpg
 kml: /hike/kml/Bommer-Ridge-and-Moro-Ridge.kml
 collection: hike
