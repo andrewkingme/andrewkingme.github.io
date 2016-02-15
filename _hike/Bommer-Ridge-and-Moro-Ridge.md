@@ -20,4 +20,3 @@ tags:
 
 ![Bommer Ridge and Moro Ridge](/{{ page.collection }}/img/Bommer-Ridge-and-Moro-Ridge-002.jpg)
 ![Bommer Ridge and Moro Ridge](/{{ page.collection }}/img/Bommer-Ridge-and-Moro-Ridge-003.jpg)
-![Bommer Ridge and Moro Ridge](/{{ page.collection }}/img/Bommer-Ridge-and-Moro-Ridge-004.jpg)
