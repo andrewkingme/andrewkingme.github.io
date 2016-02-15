@@ -8,4 +8,4 @@ tags:
   - hike
 ---
 
-[/hike](/hike/) is live. More posts with pictures and GPS data coming soon!
+[/hike](/hike/) is live. More posts with pictures and GPS data coming soon.
