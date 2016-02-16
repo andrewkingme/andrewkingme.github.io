@@ -40,19 +40,19 @@ Using the following graph and custom Python code, I was able to extract the nece
 
 ### Dynamo Graph: Part 1
 
-Part 1 of the graph pulls in all of the revision clouds within the active document and runs the elements through a custom Python node. RFI/ASI/PR/CCD Numbers and Comments are pulled in as instance parameters so that every revision cloud can have a unique identifier and a unique comment.
+Part 1 of the graph pulls in all of the revision clouds and sheets within the active document and runs the elements through a custom Python node. RFI/ASI/PR/CCD Numbers and Comments are pulled in as instance parameters so that every revision cloud can have a unique identifier and a unique comment.
 
 ![Revit Revision Cloud Data to Excel via Dynamo](/{{ page.collection }}/img/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001a.png)
 
 ### Custom Python Node
 
-Revit does not automatically report the Sheet Number or Sheet Name to a revision cloud parameter, so a custom Python node was required to match up the elements and views. A similar process was nested in this code to match legend views to sheets.
+Revit does not automatically report the Sheet Number or Sheet Name to a revision cloud parameter, so a custom Python node was required to match up the elements and views.
 
 {% highlight python %}
 # Python Node for Dynamo
-# Input: Revision Cloud
-# Output: Matching View, Matching Revision Cloud, Referencing View
-# Version 0.4
+# Input: Revision Clouds, Sheets
+# Output: Matching Sheets, Matching Revision Clouds, Referencing Views
+# Version 0.5
 # Coded by Andrew King
 # http://andrewkingme.com
 # 
@@ -64,70 +64,80 @@ Revit does not automatically report the Sheet Number or Sheet Name to a revision
 #
 # 2016-02-14 Version 0.4
 # Expanded Python code to output every instance of a revision cloud in every instance of a legend.
+#
+# 2016-02-16 Version 0.5
+# Restructured code to reduce number of cycles.
+# Eliminated the need for a separate legend/dependency path.
+# Boolean selector for Revisions on Sheets/Revisions in Views on Sheets.
+# Revit 2014 compatibility.
 
 import clr
 clr.AddReference('ProtoGeometry')
 from Autodesk.DesignScript.Geometry import *
 
-clr.AddReference('RevitServices')
-import RevitServices
-from RevitServices.Persistence import DocumentManager
-
+# Import RevitAPI
 clr.AddReference('RevitAPI')
 import Autodesk
 from Autodesk.Revit.DB import *
 
+# Import DocumentManager and TransactionManager
+clr.AddReference('RevitServices')
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+from RevitServices.Transactions import TransactionManager
+
+#Assign input to the IN variables.
 revisioncloudinput = UnwrapElement(IN[0])
+sheetinput = UnwrapElement(IN[1])
+revisionsonsheets = IN[2]
+revisionsinviewsonsheets = IN[3]
 
-viewtemplates = []
-views = []
-
-matchingviews = []
+matchingsheets = []
 matchingrevisionclouds = []
 referencingviews = []
 
-for view in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument).OfClass(View):
-	if view.IsTemplate == True:
-		viewtemplates.append(view)
-	else:
-		views.append(view)
+#Look for revision clouds on sheets.
+if revisionsonsheets == True:
+	for sheet in sheetinput:
+		for sheetelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, sheet.Id):
+			for revisioncloud in revisioncloudinput:
+				if sheetelement.Id == revisioncloud.Id:
+					matchingsheets.append(sheet)
+					matchingrevisionclouds.append(revisioncloud)
+					referencingviews.append(sheet)
 
-for revisioncloud in revisioncloudinput:
-	for view in views:
-		viewelements = FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, view.Id)
-		for viewelement in viewelements:
-			if viewelement.Id == revisioncloud.Id:
-				if view.ViewType == ViewType.Legend:
-					
-					for sheet in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument).OfClass(ViewSheet):
-						viewports = sheet.GetAllPlacedViews()
-						for viewport in viewports:
-							legendview = DocumentManager.Instance.CurrentDBDocument.GetElement(viewport)
-							if view.Id == legendview.Id:
-								matchingviews.append(sheet)
+#Look for revision clouds in views on sheets.
+if revisionsinviewsonsheets == True:
+	for sheet in sheetinput:
+		if DocumentManager.Instance.CurrentUIApplication.Application.VersionName == "Autodesk Revit 2014":
+			for viewport in sheet.GetAllViewports():
+				for view in [DocumentManager.Instance.CurrentDBDocument.GetElement(viewport)]:
+					for viewid in [DocumentManager.Instance.CurrentDBDocument.GetElement(view.ViewId)]:
+						for viewelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, viewid.Id):
+							for revisioncloud in revisioncloudinput:
+								if viewelement.Id == revisioncloud.Id:
+									matchingsheets.append(sheet)
+									matchingrevisionclouds.append(revisioncloud)
+									referencingviews.append(viewid)
+		else:
+			for viewport in sheet.GetAllPlacedViews():
+				for view in [DocumentManager.Instance.CurrentDBDocument.GetElement(viewport)]:
+					for viewelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, view.Id):
+						for revisioncloud in revisioncloudinput:
+							if viewelement.Id == revisioncloud.Id:
+								matchingsheets.append(sheet)
 								matchingrevisionclouds.append(revisioncloud)
 								referencingviews.append(view)
 
-				else:
-					matchingviews.append(view)
-					matchingrevisionclouds.append(revisioncloud)
-					referencingviews.append(view)
-
-#Assign your output to the OUT variable.
-OUT = matchingviews, matchingrevisionclouds, referencingviews
+#Assign output to the OUT variable.
+OUT = matchingsheets, matchingrevisionclouds, referencingviews
 {% endhighlight %}
 
 ### Dynamo Graph: Part 2
 
-Part 2 of the graph filters the output list to remove duplicate dependent view items. For example, if a revision cloud was placed in a dependent view of Floor Plan Level 1, Revit would find the revision in both the primary and dependent view. This portion of the graph will make sure that only revision clouds that show on a sheet will export to Excel.
+Part 2 of the graph extracts the relevant parameter values, builds an itemized list, and sends it to Excel.
 
 ![Revit Revision Cloud Data to Excel via Dynamo](/{{ page.collection }}/img/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001b.png)
-
-### Dynamo Graph: Part 3
-
-Part 3 of the graph extracts the relevant parameter values, builds an itemized list, and sends it to Excel.
-
-![Revit Revision Cloud Data to Excel via Dynamo](/{{ page.collection }}/img/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001c.png)
 
 ### Complete Dynamo Graph
 
@@ -135,4 +145,4 @@ Here it is all together. Simple, efficient output of relevant revision cloud dat
 
 ![Revit Revision Cloud Data to Excel via Dynamo](/{{ page.collection }}/img/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001.png)
 
-*Post updated to reflect Version 0.4 on 14 Feb 2016.*
+*Post updated to reflect Version 0.5 on 16 Feb 2016.*
