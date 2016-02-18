@@ -138,19 +138,16 @@ header {
 
 /* Code Snippets */
 
-pre {
-  padding: 8px 15px;
-  background: $color-5;
-  color: $color-4;
-  border-radius: 5px;
-  border: 1px solid $color-2;
-  overflow-x: auto;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 figure {
   margin: 0px;
+}
+
+pre {
+  border: 1px solid $color-2;
+  border-radius: 5px;
+  background: $color-5;
+  padding: 20px;
+  overflow-x: auto;
 }
 
 /* Forms */
