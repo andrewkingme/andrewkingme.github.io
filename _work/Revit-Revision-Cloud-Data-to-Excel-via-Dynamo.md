@@ -86,7 +86,7 @@ import RevitServices
 from RevitServices.Persistence import DocumentManager
 from RevitServices.Transactions import TransactionManager
 
-#Assign input to the IN variables.
+# Assign input to the IN variables.
 revisioncloudinput = UnwrapElement(IN[0])
 sheetinput = UnwrapElement(IN[1])
 revisionsonsheets = IN[2]
