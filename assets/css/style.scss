@@ -20,7 +20,7 @@ body {
   margin: 0;
   background-color: $color-1;
   font-family: $font-stack;
-  font-size: 14px/1.5em;
+  font-size: 16px;
   color: $color-3;
   font-weight: 300;
 }
@@ -164,7 +164,7 @@ figure {
   border: 1px solid $color-2;
   border-radius: 3px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   resize: none;
   -webkit-appearance: none;
@@ -198,7 +198,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	display: inline-block;
 	color: $color-6;
   font-family: inherit;
-	font-size: 14px;
+	font-size: 16px;
 	padding: 6px 24px;
 }
 
