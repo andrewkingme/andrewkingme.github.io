@@ -3,7 +3,12 @@
     <source src="/{{ page.collection }}/img/{{ include.mp4 }}" type="video/mp4">
     <source src="/{{ page.collection }}/img/{{ include.webm }}" type="video/webm">
     <source src="/{{ page.collection }}/img/{{ include.ogg }}" type="video/ogg">
-    <img src="/{{ page.collection }}/img/{{ include.image }}">
+    <a href="#{{ include.image }}">
+      <img src="/{{ page.collection }}/img/{{ include.image }}">
+    </a>
+    <a href="#_" class="lightbox hide-on-mobile" id="{{ include.image }}">
+      <img src="/{{ page.collection }}/img/{{ include.image }}">
+    </a>
   </video>
 </div>
 <em>{{ include.caption }}</em>
