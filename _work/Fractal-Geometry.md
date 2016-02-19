@@ -16,8 +16,6 @@ Fractal geometry in Maya and ZBrush, Fall 2009.
 
 <!--more-->
 
-![Fractal Geometry](/{{ page.collection }}/img/Fractal-Geometry-001.png)
-*Concept Model, Powder Print*
+{% include image.html image="Fractal-Geometry-001.png" caption="Concept Model, Powder Print" %}
 
-![Fractal Geometry](/{{ page.collection }}/img/Fractal-Geometry-002.png)
-*Form Manipulation in ZBrush*
+{% include image.html image="Fractal-Geometry-002.png" caption="Form Manipulation in ZBrush" %}

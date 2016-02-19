@@ -15,20 +15,9 @@ Flow of Information: [Input Sensors] to [Breadboard] to [MAKE Controller] to [US
 
 <!--more-->
 
-![Maya and a MAKE Controller](/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-001.png)
-*Input Sensors, Breadboard, and Make Controller*
+{% include image.html image="Maya-and-a-MAKE-Controller-001.png" caption="Input Sensors, Breadboard, and Make Controller" %}
 
-<p>
-<div class="videoWrapper">
-<video autoplay loop muted poster="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.png">
-  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.mp4" type="video/mp4">
-  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.webm" type="video/webm">
-  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.ogg" type="video/ogg">
-  <img src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-002.png" alt="Maya and a MAKE Controller" />
-</video>
-</div>
-<em>mchelper, Flash Connector, and MEL Script in Maya</em>
-</p>
+{% include video.html image="Maya-and-a-MAKE-Controller-002.png" mp4="Maya-and-a-MAKE-Controller-002.mp4" webm="Maya-and-a-MAKE-Controller-002.webm" ogg="Maya-and-a-MAKE-Controller-002.ogg" caption="mchelper, Flash Connector, and MEL Script in Maya" %}
 
 The following MEL Script captures three input devices for form creation and a fourth input device for curation:
 
@@ -60,14 +49,4 @@ $count1++;
 }
 {% endhighlight %}
 
-<p>
-<div class="videoWrapper">
-<video autoplay loop muted poster="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.png">
-  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.mp4" type="video/mp4">
-  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.webm" type="video/webm">
-  <source src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.ogg" type="video/ogg">
-  <img src="/{{ page.collection }}/img/Maya-and-a-MAKE-Controller-003.png" alt="Maya and a MAKE Controller" />
-</video>
-</div>
-<em>Screen Capture of Curation in Maya</em>
-</p>
+{% include video.html image="Maya-and-a-MAKE-Controller-003.png" mp4="Maya-and-a-MAKE-Controller-003.mp4" webm="Maya-and-a-MAKE-Controller-003.webm" ogg="Maya-and-a-MAKE-Controller-003.ogg" caption="Screen Capture of Curation in Maya" %}

@@ -42,7 +42,7 @@ Using the following graph and custom Python code, I was able to extract the nece
 
 Part 1 of the graph pulls in all of the revision clouds and sheets within the active document and runs the elements through a custom Python node. RFI/ASI/PR/CCD Numbers and Comments are pulled in as instance parameters so that every revision cloud can have a unique identifier and a unique comment.
 
-![Revit Revision Cloud Data to Excel via Dynamo](/{{ page.collection }}/img/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001a.png)
+{% include image.html image="Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001a.png" %}
 
 ### Custom Python Node
 
@@ -137,12 +137,12 @@ OUT = matchingsheets, matchingrevisionclouds, referencingviews
 
 Part 2 of the graph extracts the relevant parameter values, builds an itemized list, and sends it to Excel.
 
-![Revit Revision Cloud Data to Excel via Dynamo](/{{ page.collection }}/img/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001b.png)
+{% include image.html image="Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001b.png" %}
 
 ### Complete Dynamo Graph
 
 Here it is all together. Simple, efficient output of relevant revision cloud data.
 
-![Revit Revision Cloud Data to Excel via Dynamo](/{{ page.collection }}/img/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001.png)
+{% include image.html image="Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001.png" %}
 
 *Post updated to reflect Version 0.5 on 16 Feb 2016.*

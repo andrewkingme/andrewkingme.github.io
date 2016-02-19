@@ -15,8 +15,7 @@ andrewking(me) is hosted from [Jekyll](http://jekyllrb.com) source on [GitHub Pa
 
 <!--more-->
 
-![Built With Jekyll](/{{ page.collection }}/img/Built-With-Jekyll-001.png)
-*Summary of GitHub Pull Requests, Issues Opened, and Commits.*
+{% include image.html image="Built-With-Jekyll-001.png" caption="Summary of GitHub Pull Requests, Issues Opened, and Commits" %}
 
 Resources: [Jekyll](http://jekyllrb.com), [GitHub Pages](http://pages.github.com), [kramdown](http://kramdown.gettalong.org), [Sass](http://sass-lang.com), [Pygments](http://pygments.org), [Simple Grid](http://thisisdallas.github.io/Simple-Grid/), [Google Fonts](http://www.google.com/fonts)<br>
 Software: [Adobe Brackets](http://brackets.io), [GitHub for Mac](http://mac.github.com), [Pixelmator](http://www.pixelmator.com)
@@ -42,8 +41,7 @@ andrewking(me) is hosted from [Jekyll](http://jekyllrb.com) source on [GitHub Pa
 
 <!--more-->
 
-![Built With Jekyll](/{{ page.collection }}/img/Built-With-Jekyll-001.png)
-*Summary of GitHub Pull Requests, Issues Opened, and Commits.*
+{% include image.html image="Built-With-Jekyll-001.png" caption="Summary of GitHub Pull Requests, Issues Opened, and Commits" %}
 
 Resources: [Jekyll](http://jekyllrb.com), [GitHub Pages](http://pages.github.com), [kramdown](http://kramdown.gettalong.org), [Sass](http://sass-lang.com), [Pygments](http://pygments.org), [Simple Grid](http://thisisdallas.github.io/Simple-Grid/), [Google Fonts](http://www.google.com/fonts)<br>
 Software: [Adobe Brackets](http://brackets.io), [GitHub for Mac](http://mac.github.com), [Pixelmator](http://www.pixelmator.com)
