@@ -1,14 +1,19 @@
 <div class="videoWrapper">
-  <video autoplay loop muted poster="/{{ page.collection }}/img/{{ include.image }}">
-    <source src="/{{ page.collection }}/img/{{ include.mp4 }}" type="video/mp4">
-    <source src="/{{ page.collection }}/img/{{ include.webm }}" type="video/webm">
-    <source src="/{{ page.collection }}/img/{{ include.ogg }}" type="video/ogg">
-    <a href="#{{ include.image }}">
+  <a href="#{{ include.image }}">
+    <video autoplay loop muted poster="/{{ page.collection }}/img/{{ include.image }}">
+      <source src="/{{ page.collection }}/img/{{ include.mp4 }}" type="video/mp4">
+      <source src="/{{ page.collection }}/img/{{ include.webm }}" type="video/webm">
+      <source src="/{{ page.collection }}/img/{{ include.ogg }}" type="video/ogg">
       <img src="/{{ page.collection }}/img/{{ include.image }}">
-    </a>
-    <a href="#_" class="lightbox hide-on-mobile" id="{{ include.image }}">
+    </video>
+  </a>
+  <a href="#_" class="lightbox hide-on-mobile" id="{{ include.image }}">
+    <video autoplay loop muted poster="/{{ page.collection }}/img/{{ include.image }}">
+      <source src="/{{ page.collection }}/img/{{ include.mp4 }}" type="video/mp4">
+      <source src="/{{ page.collection }}/img/{{ include.webm }}" type="video/webm">
+      <source src="/{{ page.collection }}/img/{{ include.ogg }}" type="video/ogg">
       <img src="/{{ page.collection }}/img/{{ include.image }}">
-    </a>
-  </video>
+    </video>
+  </a>
 </div>
 <em>{{ include.caption }}</em>
