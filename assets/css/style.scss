@@ -33,7 +33,6 @@ a {
 
 a img {
   border: none;
-  vertical-align: top;
 }
 
 p {
@@ -71,7 +70,7 @@ table {
   margin-bottom: 0;
 }
 
-.videoWrapper iframe, video {
+.videoWrapper video {
   position: absolute;
   top: 0;
   left: 0;
@@ -170,6 +169,7 @@ pre {
   width: 100%;
   height: 100%;
   text-align: center;
+  vertical-align: middle;
   top: 0;
   left: 0;
   border: none;
