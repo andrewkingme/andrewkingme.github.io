@@ -1,8 +1,7 @@
-<a href="#{{ include.image }}">
+<a href="#{{ include.image }}" class="remove-link-formatting">
+  <img src="/{{ page.collection }}/img/{{ include.image }}">
+</a>
+<a href="#_" class="lightbox remove-link-formatting hide-on-mobile" id="{{ include.image }}">
   <img src="/{{ page.collection }}/img/{{ include.image }}">
 </a>
 <em>{{ include.caption }}</em>
-
-<a href="#_" class="lightbox hide-on-mobile" id="{{ include.image }}">
-  <img src="/{{ page.collection }}/img/{{ include.image }}">
-</a>
