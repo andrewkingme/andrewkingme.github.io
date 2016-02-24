@@ -1,8 +1,9 @@
-<a href="#{{ include.image }}" class="remove-link-formatting">
-  <img src="/{{ page.collection }}/img/{{ include.image }}">
+<a href="#{{ include.image }}" class="zoom-in remove-link-formatting">
+  <img src="/{{ page.collection }}/img/{{ include.image }}" alt="{{ include.image }}">
 </a>
 <em>{{ include.caption }}</em>
 
-<a href="#_" class="lightbox remove-link-formatting hide-on-mobile" id="{{ include.image }}">
-  <img src="/{{ page.collection }}/img/{{ include.image }}">
+<a href="#_" class="lightbox zoom-out remove-link-formatting hide-on-mobile" id="{{ include.image }}">
+  <span class="close-icon">x</span>
+  <img src="/{{ page.collection }}/img/{{ include.image }}" alt="{{ include.image }}">
 </a>

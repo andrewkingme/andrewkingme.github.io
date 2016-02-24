@@ -1,5 +1,5 @@
 <div class="videoWrapper">
-  <a href="#{{ include.image }}">
+  <a href="#{{ include.image }}" class="zoom-in">
     <video autoplay loop muted poster="/{{ page.collection }}/img/{{ include.image }}">
       <source src="/{{ page.collection }}/img/{{ include.mp4 }}" type="video/mp4">
       <source src="/{{ page.collection }}/img/{{ include.webm }}" type="video/webm">
@@ -11,7 +11,8 @@
 <em>{{ include.caption }}</em>
 
 <div>
-  <a href="#_" class="lightbox hide-on-mobile" id="{{ include.image }}">
+  <a href="#_" class="lightbox zoom-out hide-on-mobile" id="{{ include.image }}">
+    <span class="close-icon">x</span>
     <video autoplay loop muted poster="/{{ page.collection }}/img/{{ include.image }}">
       <source src="/{{ page.collection }}/img/{{ include.mp4 }}" type="video/mp4">
       <source src="/{{ page.collection }}/img/{{ include.webm }}" type="video/webm">
