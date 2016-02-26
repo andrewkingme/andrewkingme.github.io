@@ -13,7 +13,7 @@ tags:
   - python
 ---
 
-Scheduling revision clouds in Revit is limited to the following built-in type parameters. In addition, a revision cloud schedule can only be placed in a title block family.
+Scheduling revision clouds in Revit is limited to the following built-in type parameters.
 
 <!--more-->
 
@@ -24,7 +24,7 @@ Scheduling revision clouds in Revit is limited to the following built-in type pa
 * Issued to
 * Issued by
 
-Our team wanted to manage all revision data within Revit revision clouds and regularly export a log to Excel for distribution to the contractor. At a minimum, the Excel document would need to list the following.
+At a minimum, our team needed an itemized list of revision clouds with the following information.
 
 * Sheet Number
 * Sheet Name
