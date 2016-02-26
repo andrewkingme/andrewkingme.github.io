@@ -13,7 +13,7 @@ tags:
   - python
 ---
 
-Scheduling revision clouds in Revit is limited. Revit can output the following built-in type parameters, but only these parameters and only within a title block family.
+Scheduling revision clouds in Revit is limited to the following built-in type parameters. In addition, a revision cloud schedule can only be placed in a title block family.
 
 <!--more-->
 
@@ -24,35 +24,35 @@ Scheduling revision clouds in Revit is limited. Revit can output the following b
 * Issued to
 * Issued by
 
-I needed a way to manage all construction administration phase revisions within Revit revision clouds and then regularly export an itemized list to Excel for distribution to the contrator. At a minimum, the Excel document would need to list the following.
+Our team wanted to manage all revision data within Revit revision clouds and regularly export a log to Excel for distribution to the contrator. At a minimum, the Excel document would need to list the following.
 
 * Sheet Number
 * Sheet Name
 * Revision Number
 * Revision Description
 * Revision Date
-* RFI/ASI/PR/CCD Number
-* Comments
+* Mark (For example, RFI 001) [Instance Parameter]
+* Comments [Instance Parameter]
 
-The solution: Dynamo.
+Revit can't do this out of the box, but Dynamo can!
 
-Using the following graph and custom Python code, I was able to extract the necesary data from Revit and push it to Excel.
+The following Dynamo definition and custom Python node extracts the relevant revision data from Revit and pushes it to Excel.
 
-### Dynamo Graph: Part 1
+### Dynamo Definition: Part 1
 
-Part 1 of the graph pulls in all of the revision clouds and sheets within the active document and runs the elements through a custom Python node. RFI/ASI/PR/CCD Numbers and Comments are pulled in as instance parameters so that every revision cloud can have a unique identifier and a unique comment.
+Part 1 of the definition pulls in all of the revision clouds and sheets within the active document and runs the elements through a custom Python node.
 
 {% include image.html image="Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001a.png" %}
 
 ### Custom Python Node
 
-Revit does not automatically report the Sheet Number or Sheet Name to a revision cloud parameter, so a custom Python node was required to match up the elements and views.
+The custom Python code below filters through sheets and views-on-sheets looking for revision clouds. For each match the code collects the revision cloud element, associated sheet, and referencing view.
 
 {% highlight python %}
 # Python Node for Dynamo
 # Input: Revision Clouds, Sheets
 # Output: Matching Sheets, Matching Revision Clouds, Referencing Views
-# Version 0.5
+# Version 0.6
 # Coded by Andrew King
 # http://andrewkingme.com
 # 
@@ -70,6 +70,9 @@ Revit does not automatically report the Sheet Number or Sheet Name to a revision
 # Eliminated the need for a separate legend/dependency path.
 # Boolean selector for Revisions on Sheets/Revisions in Views on Sheets.
 # Revit 2014 compatibility.
+#
+# 2016-02-25 Version 0.6
+# Added category filter to improve FilteredElementCollector performace.
 
 import clr
 clr.AddReference('ProtoGeometry')
@@ -86,7 +89,7 @@ import RevitServices
 from RevitServices.Persistence import DocumentManager
 from RevitServices.Transactions import TransactionManager
 
-# Assign input to the IN variables.
+#Assign input to the IN variables.
 revisioncloudinput = UnwrapElement(IN[0])
 sheetinput = UnwrapElement(IN[1])
 revisionsonsheets = IN[2]
@@ -96,53 +99,53 @@ matchingsheets = []
 matchingrevisionclouds = []
 referencingviews = []
 
-# Look for revision clouds on sheets.
+#Look for revision clouds on sheets.
 if revisionsonsheets == True:
-	for sheet in sheetinput:
-		for sheetelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, sheet.Id):
-			for revisioncloud in revisioncloudinput:
-				if sheetelement.Id == revisioncloud.Id:
-					matchingsheets.append(sheet)
-					matchingrevisionclouds.append(revisioncloud)
-					referencingviews.append(sheet)
+    for sheet in sheetinput:
+        for sheetelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, sheet.Id).OfCategory(BuiltInCategory.OST_RevisionClouds):
+            for revisioncloud in revisioncloudinput:
+                if sheetelement.Id == revisioncloud.Id:
+                    matchingsheets.append(sheet)
+                    matchingrevisionclouds.append(revisioncloud)
+                    referencingviews.append(sheet)
 
-# Look for revision clouds in views on sheets.
+#Look for revision clouds in views on sheets.
 if revisionsinviewsonsheets == True:
-	for sheet in sheetinput:
-		if DocumentManager.Instance.CurrentUIApplication.Application.VersionName == "Autodesk Revit 2014":
-			for viewport in sheet.GetAllViewports():
-				for view in [DocumentManager.Instance.CurrentDBDocument.GetElement(viewport)]:
-					for viewid in [DocumentManager.Instance.CurrentDBDocument.GetElement(view.ViewId)]:
-						for viewelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, viewid.Id):
-							for revisioncloud in revisioncloudinput:
-								if viewelement.Id == revisioncloud.Id:
-									matchingsheets.append(sheet)
-									matchingrevisionclouds.append(revisioncloud)
-									referencingviews.append(viewid)
-		else:
-			for viewport in sheet.GetAllPlacedViews():
-				for view in [DocumentManager.Instance.CurrentDBDocument.GetElement(viewport)]:
-					for viewelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, view.Id):
-						for revisioncloud in revisioncloudinput:
-							if viewelement.Id == revisioncloud.Id:
-								matchingsheets.append(sheet)
-								matchingrevisionclouds.append(revisioncloud)
-								referencingviews.append(view)
+    for sheet in sheetinput:
+        if DocumentManager.Instance.CurrentUIApplication.Application.VersionName == "Autodesk Revit 2014":
+            for viewport in sheet.GetAllViewports():
+                for view in [DocumentManager.Instance.CurrentDBDocument.GetElement(viewport)]:
+                    for viewid in [DocumentManager.Instance.CurrentDBDocument.GetElement(view.ViewId)]:
+                        for viewelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, viewid.Id).OfCategory(BuiltInCategory.OST_RevisionClouds):
+                            for revisioncloud in revisioncloudinput:
+                                if viewelement.Id == revisioncloud.Id:
+                                    matchingsheets.append(sheet)
+                                    matchingrevisionclouds.append(revisioncloud)
+                                    referencingviews.append(viewid)
+        else:
+            for viewport in sheet.GetAllPlacedViews():
+                for view in [DocumentManager.Instance.CurrentDBDocument.GetElement(viewport)]:
+                    for viewelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, view.Id).OfCategory(BuiltInCategory.OST_RevisionClouds):
+                        for revisioncloud in revisioncloudinput:
+                            if viewelement.Id == revisioncloud.Id:
+                                matchingsheets.append(sheet)
+                                matchingrevisionclouds.append(revisioncloud)
+                                referencingviews.append(view)
 
-# Assign output to the OUT variable.
+#Assign output to the OUT variable.
 OUT = matchingsheets, matchingrevisionclouds, referencingviews
 {% endhighlight %}
 
-### Dynamo Graph: Part 2
+### Dynamo Definition: Part 2
 
-Part 2 of the graph extracts the relevant parameter values, builds an itemized list, and sends it to Excel.
+Part 2 of the definition extracts the relevant parameter values, builds an itemized list, sorts the list, and sends it to Excel.
 
 {% include image.html image="Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001b.png" %}
 
-### Complete Dynamo Graph
+### Complete Dynamo Definition
 
-Here it is all together. Simple, efficient output of relevant revision cloud data.
+Here it is all together. Simple, efficient output of Revit revision cloud data.
 
 {% include image.html image="Revit-Revision-Cloud-Data-to-Excel-via-Dynamo-001.png" %}
 
-*Post updated to reflect Version 0.5 on 16 Feb 2016.*
+*Post updated to reflect Version 0.6 on 25 Feb 2016.*
