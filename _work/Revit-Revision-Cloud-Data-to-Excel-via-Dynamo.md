@@ -24,7 +24,7 @@ Scheduling revision clouds in Revit is limited to the following built-in type pa
 * Issued to
 * Issued by
 
-Our team wanted to manage all revision data within Revit revision clouds and regularly export a log to Excel for distribution to the contrator. At a minimum, the Excel document would need to list the following.
+Our team wanted to manage all revision data within Revit revision clouds and regularly export a log to Excel for distribution to the contractor. At a minimum, the Excel document would need to list the following.
 
 * Sheet Number
 * Sheet Name
@@ -36,7 +36,7 @@ Our team wanted to manage all revision data within Revit revision clouds and reg
 
 Revit can't do this out of the box, but Dynamo can!
 
-The following Dynamo definition and custom Python node extracts the relevant revision data from Revit and pushes it to Excel.
+The following Dynamo definition and custom Python code extracts the relevant revision data from Revit and pushes it to Excel.
 
 ### Dynamo Definition: Part 1
 
