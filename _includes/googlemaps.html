@@ -1,8 +1,6 @@
 <div id="map"></div>
-<em>{{ include.caption }}</em>
 
 <script>
-
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.TERRAIN,
@@ -18,6 +16,5 @@ function initMap() {
   });
   {% endfor %}
 }
-
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoXsfYRsjBIudkbtzruR_hcMqc7fBa0GQ&callback=initMap" async defer></script>
