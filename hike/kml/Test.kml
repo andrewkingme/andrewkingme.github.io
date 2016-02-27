@@ -12,6 +12,7 @@
             <Icon>
               <href>http://andrewkingme.com/hike/kml/ico/hiking.png</href>
             </Icon>
+            <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction">
           </IconStyle>
         </Style>
       <Point>
