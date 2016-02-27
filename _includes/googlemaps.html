@@ -10,11 +10,13 @@ function initMap() {
     zoomControl: true,
     mapTypeControl: true,
   });
-
+  
+  {% for kml in include.kml %}
   var ctaLayer = new google.maps.KmlLayer({
-    url: '{{ site.url}}{{ include.kml }}',
+    url: '{{ site.url}}{{ kml }}',
     map: map
   });
+  {% endfor %}
 }
 
 </script>

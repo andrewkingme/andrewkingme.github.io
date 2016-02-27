@@ -14,7 +14,7 @@ tags:
 
 <!--more-->
 
-{% include googlemaps.html kml="/hike/kml/Bommer-Ridge-and-Moro-Ridge.kml" caption="GPS Data from 2016/01/02 Hike"%}
+{% include googlemaps.html kml="/hike/kml/Bommer-Ridge-and-Moro-Ridge.kml" caption="GPS Data from 2016/01/02 Hike" %}
 
 {% include image.html image='Bommer-Ridge-and-Moro-Ridge-002.jpg' %}
 
