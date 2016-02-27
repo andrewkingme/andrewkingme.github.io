@@ -28,8 +28,8 @@ YAML Front Matter and Markdown source of this page:
 layout: article
 title: "Built With Jekyll"
 date: 2014-07-17 06:57:00
-cover: /img/work/Built-With-Jekyll-Cover.png
-section: work
+cover: /work/img/Built-With-Jekyll-Cover.png
+collection: work
 tags:
   - all
   - code
@@ -54,6 +54,7 @@ article.html _layout for Jekyll build:
 {% raw %}
 <!doctype html>
 <html>
+{% include license.html %}
 {% include head.html %}
 <body>
   {% include header.html %}
@@ -69,7 +70,7 @@ article.html _layout for Jekyll build:
           <p>
             {% for tag in page.tags %}
               {% if tag != "all" %}
-                <a href="/{{ page.section }}/{{ tag | output }}/">#{{ tag | output }}</a>
+                <a href="/{{ page.collection }}/tag/{{ tag | output }}/">#{{ tag | output }}</a>
               {% endif %}
             {% endfor %}
           </p>  
