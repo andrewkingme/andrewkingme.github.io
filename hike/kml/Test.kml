@@ -10,7 +10,7 @@
         <Style>
           <IconStyle>
             <Icon>
-              <href>{{ site.url}}/hike/kml/ico/hiking.png</href>
+              <href>http://andrewkingme.com/hike/kml/ico/hiking.png</href>
             </Icon>
           </IconStyle>
         </Style>
