@@ -11,7 +11,7 @@ function initMap() {
   
   {% for kml in include.kml %}
   var ctaLayer = new google.maps.KmlLayer({
-    url: '{{ site.url}}{{ kml }}',
+    url: '{{ site.url}}{{ kml }}?time={{ site.time | date_to_xmlschema }}',
     map: map
   });
   {% endfor %}
