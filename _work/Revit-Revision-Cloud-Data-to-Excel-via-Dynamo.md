@@ -89,7 +89,7 @@ import RevitServices
 from RevitServices.Persistence import DocumentManager
 from RevitServices.Transactions import TransactionManager
 
-#Assign input to the IN variables.
+# Assign input to the IN variables.
 revisioncloudinput = UnwrapElement(IN[0])
 sheetinput = UnwrapElement(IN[1])
 revisionsonsheets = IN[2]
@@ -99,7 +99,7 @@ matchingsheets = []
 matchingrevisionclouds = []
 referencingviews = []
 
-#Look for revision clouds on sheets.
+# Look for revision clouds on sheets.
 if revisionsonsheets == True:
     for sheet in sheetinput:
         for sheetelement in FilteredElementCollector(DocumentManager.Instance.CurrentDBDocument, sheet.Id).OfCategory(BuiltInCategory.OST_RevisionClouds):
@@ -109,7 +109,7 @@ if revisionsonsheets == True:
                     matchingrevisionclouds.append(revisioncloud)
                     referencingviews.append(sheet)
 
-#Look for revision clouds in views on sheets.
+# Look for revision clouds in views on sheets.
 if revisionsinviewsonsheets == True:
     for sheet in sheetinput:
         if DocumentManager.Instance.CurrentUIApplication.Application.VersionName == "Autodesk Revit 2014":
@@ -132,7 +132,7 @@ if revisionsinviewsonsheets == True:
                                 matchingrevisionclouds.append(revisioncloud)
                                 referencingviews.append(view)
 
-#Assign output to the OUT variable.
+# Assign output to the OUT variable.
 OUT = matchingsheets, matchingrevisionclouds, referencingviews
 {% endhighlight %}
 
