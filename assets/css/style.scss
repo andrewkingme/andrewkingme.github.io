@@ -130,7 +130,7 @@ header {
   margin-bottom: 20px;
 }
 
-p > code {
+p > code, li > code {
   border: 1px solid $color-2;
   border-radius: 5px;
   background-color: $color-5;
