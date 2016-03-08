@@ -137,6 +137,7 @@ OUT = matchingsheets, matchingrevisionclouds, referencingviews
 {% endhighlight %}
 
 Notes on the Python code:
+
 * The code above was optimized to run as fast as possible using FilteredElementCollector().OfCategory(). However, looking through all sheets and views in a project is still computationally intensive. On a large benchmark project (1400+ revision clouds), the process currently takes around 4 minutes to complete.
 * "Revisions on Sheets" and "Revisions in Views on Sheets" can be enabled separately on IN[2] and IN[3]. Consider having your team place all revisions on sheets and turn off "Revisions in Views on Sheets" to increase speed.
 * The code above was designed to collect only visible revisions. If the revision cloud is not visible on the sheet (printed set), it will not be collected.
