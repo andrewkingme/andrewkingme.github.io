@@ -138,7 +138,7 @@ OUT = matchingsheets, matchingrevisionclouds, referencingviews
 
 Notes on the Python code:
 
-1. `FilteredElementCollector()` was optimized to run as fast as possible using `OfCategory()`. However, looking through all sheets and views in a project is still computationally intensive. On a large benchmark project (1400+ revision clouds), the process currently takes around 4 minutes to complete.
+1. `FilteredElementCollector()` was optimized to run as fast as possible using `.OfCategory()`. However, looking through all sheets and views in a project is still computationally intensive. On a large benchmark project (1400+ revision clouds), the process currently takes around 4 minutes to complete.
 2. *Revisions on Sheets* and *Revisions in Views on Sheets* can be enabled separately on IN[2] and IN[3]. Consider having your team place all revisions on sheets and turn off *Revisions in Views on Sheets* to increase speed.
 3. The code above was designed to collect only visible revisions. If the revision cloud is not visible on the sheet (printed set), it will not be collected.
 4. The *Sheet Issues/Revisions* dialog in Revit is a great way to pre-filter your output by revision sequence (delta). Sequences set to *Cloud and Tag* or *Tag* will export. Sequences set to *None* are not visible and will not export.
