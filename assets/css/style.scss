@@ -118,15 +118,15 @@ header {
 /* Code */
 
 .highlight {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 20px;
   border: 1px solid $color-2;
   border-radius: 5px;
   background: $color-5;
   padding: 20px;
   overflow-x: auto;
+}
+
+pre {
+  margin: 0px;
 }
 
 /* Lightbox */
