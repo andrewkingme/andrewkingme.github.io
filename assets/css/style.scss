@@ -136,6 +136,9 @@ p > code, li > code {
   background-color: $color-5;
   font-size: 12px;
   padding: 5px;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: middle;
 }
 
 pre {
