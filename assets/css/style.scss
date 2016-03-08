@@ -117,14 +117,11 @@ header {
 
 /* Code */
 
-figure {
+.highlight {
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 20px;
-}
-
-pre {
   border: 1px solid $color-2;
   border-radius: 5px;
   background: $color-5;
