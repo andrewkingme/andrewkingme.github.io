@@ -130,6 +130,13 @@ header {
   margin-bottom: 20px;
 }
 
+p > code {
+  border: 1px solid $color-2;
+  border-radius: 5px;
+  background-color: $color-5;
+  font-size: 12px;
+}
+
 pre {
   margin: 0px;
 }
