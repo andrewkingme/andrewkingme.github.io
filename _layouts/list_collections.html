@@ -14,25 +14,24 @@
         {% assign collection = site.[page.collection] | sort: 'date' | reverse %}
         {% for post in collection %}
           {% if post.tags contains page.tag %}
-            <div class="collections">
-              <a href="{{ post.url }}"><div class="collections_image" style="background-image:url('{{ post.cover }}');"></div></a>
-              <div class="collections_content">
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                {% if post.tags %}
-                  <p>
-                    {% for tag in post.tags %}
-                      {% if tag != "all" %}
-                        #{{ tag | output }}
-                      {% endif %}
-                    {% endfor %}
-                  </p>
-                {% endif %}
-                <p>
-                  <br>
-                  {{ post.content | split:'<!--more-->' | first | strip_html}}
-                </p>
+            <a href="{{ post.url }}" class="collections">
+              <div class="collections_image" style="background-image:url('{{ post.cover }}');"></div>
+              <div class="collections_title">
+                {{ post.title }}
               </div>
-            </div>
+              {% if post.tags %}
+                <div class="collections_tag">
+                  {% for tag in post.tags %}
+                    {% if tag != "all" %}
+                      #{{ tag | output }}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+              <div class="collections_abstract">
+                {{ post.content | split:'<!--more-->' | first | strip_html}}
+              </div>
+            </a>
           {% endif %}
         {% endfor %}
       </div>

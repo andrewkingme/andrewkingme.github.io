@@ -2,7 +2,7 @@
 # Sass Stylesheet
 ---
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400);
 
 $font-stack: Lato, Helvetica, Arial, sans-serif;
 $color-1: #fff;
@@ -28,7 +28,7 @@ body {
 a {
   color: $color-4;
   text-decoration: none;
-  border-bottom: 1px solid $color-2;
+  font-weight: 400;
 }
 
 .remove-link-formatting {
@@ -70,6 +70,7 @@ header {
   color: $color-1;
   text-decoration: none;
   font-size: 24px;
+  font-weight: 300;
   border-bottom: none;
   padding-bottom: 20px;
 }
@@ -77,16 +78,19 @@ header {
 .header_link {
   text-decoration: none;
   color: $color-1;
-  border-color: $color-7;
+  font-weight: 300;
 }
 
 /* Collections */
 
 .collections {
+  display: block;
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
   min-height: 144px;
   border-top: 1px solid $color-2;
+  border-bottom: none;
 }
 
 .collections:first-child {
@@ -98,20 +102,41 @@ header {
 .collections_image {
   float: left;
   margin-right: 20px;
+  height: 104px;
+  width: 191px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $color-2;
-  height: 104px;
-  width: 191px;
+  transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
 }
 
-.collections_content {
+.collections:hover .collections_image {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.collections_title {
   overflow: hidden;
-  color: $color-3;
+  color: $color-4;
 }
 
-.collections_content p {
+.collections_tag {
+  overflow: hidden;
+  color: $color-4;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.collections_abstract {
+  overflow: hidden;
+  color: $color-7;
+  font-weight: 300;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 
@@ -248,6 +273,7 @@ img {
   border-radius: 3px;
   font-family: inherit;
   font-size: 16px;
+  font-weight: 300;
   line-height: 16px;
   resize: none;
   -webkit-appearance: none;
@@ -264,6 +290,7 @@ img {
   color: $color-6;
   font-family: inherit;
   font-size: 16px;
+  font-weight: 300;
   padding: 6px 24px;
 }
 
