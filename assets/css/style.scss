@@ -108,11 +108,11 @@ header {
   background-position: center;
   background-size: cover;
   background-color: $color-2;
-  transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -webkit-transition: all .25s ease;
-  -o-transition: all .25s ease;
+  transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  -ms-transition: opacity .25s ease;
+  -webkit-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
 }
 
 .collections:hover .collections_image {
