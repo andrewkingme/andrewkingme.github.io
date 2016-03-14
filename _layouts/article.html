@@ -16,7 +16,7 @@
           <p>
             {% for tag in page.tags %}
               {% if tag != "all" %}
-                <a href="/{{ page.collection }}/tag/{{ tag | output }}/">#{{ tag | output }}</a>
+                <a href="/{{ page.collection }}/tag/{{ tag | output }}/" class="remove-link-formatting">#{{ tag | output }}</a>
               {% endif %}
             {% endfor %}
           </p>  
