@@ -1,4 +1,0 @@
----
-layout: twitter
-title: "/twitter"
----

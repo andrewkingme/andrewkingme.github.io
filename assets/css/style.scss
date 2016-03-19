@@ -116,8 +116,8 @@ header {
 }
 
 .collections:hover .collections_image {
-  opacity: 0.4;
-  filter: alpha(opacity=40); /* For IE8 and earlier */
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
 .collections_title {
@@ -259,6 +259,13 @@ img {
   height: 500px;
   width: 100%;
   margin-bottom: 20px;
+}
+
+/* Twitter */
+
+.twitter {
+  border: 1px solid $color-2;
+  border-radius: 3px;
 }
 
 /* Forms */
