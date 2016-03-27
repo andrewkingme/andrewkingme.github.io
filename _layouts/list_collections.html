@@ -14,7 +14,7 @@
         {% assign collection = site.[page.collection] | sort: 'date' | reverse %}
         {% for post in collection %}
           {% if post.tags contains page.tag %}
-            <a href="{{ post.url }}" class="collections">
+            <a href="{{ post.url }}" class="collections link_remove_hover">
               <div class="collections_image" style="background-image:url('{{ post.cover }}');"></div>
               <div class="collections_title">
                 {{ post.title }}
