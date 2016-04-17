@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Bommer Canyon"
-date: 2016-03-13 23:25:00
+date: 2015-05-17 23:25:00
 cover: /hike/img/Bommer-Canyon-Cover.jpg
 collection: hike
 tags:

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Quail Trail and Serrano Ridge"
-date: 2016-03-13 23:26:00
+date: 2015-05-25 23:26:00
 cover: /hike/img/Quail-Trail-and-Serrano-Ridge-Cover.jpg
 collection: hike
 tags:

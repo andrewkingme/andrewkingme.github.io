@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Los Pinos Peak"
-date: 2016-03-13 23:24:00
+date: 2014-04-15 23:24:00
 cover: /hike/img/Los-Pinos-Peak-Cover.jpg
 collection: hike
 tags:
