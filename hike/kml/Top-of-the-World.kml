@@ -23,24 +23,6 @@
 
   <Placemark>
     <name>Top of the World</name>
-    <description>Trailhead</description>
-    <Style>
-      <IconStyle>
-        <Icon>
-          <href>http://andrewkingme.com/hike/kml/ico/hike_ff00cc.png</href>
-        </Icon>
-        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction" />
-      </IconStyle>
-    </Style>
-    <Point>
-      <coordinates>
-        -117.760216,33.556023,301.3333333333333
-      </coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>Top of the World</name>
     <description>GPS Data from 2016/08/24 Hike</description>
     <Style>
       <LineStyle>
