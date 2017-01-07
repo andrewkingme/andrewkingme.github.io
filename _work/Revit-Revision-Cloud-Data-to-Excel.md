@@ -52,7 +52,7 @@ Part 1 of the definition collects all revision clouds and sheets within the acti
 The Python code filters through sheets and views-on-sheets, looking for revision clouds. It collects the revision cloud element, associated sheet, and referencing view.
 
 {% highlight python %}
-# Python Node for Dynamo
+# Python Code for Dynamo
 # Input: Revision Clouds, Sheets
 # Output: Matching Sheets, Matching Revision Clouds, Referencing Views
 # Version 0.6

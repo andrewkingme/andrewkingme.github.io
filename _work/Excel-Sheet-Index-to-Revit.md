@@ -35,7 +35,7 @@ This definition opens an Excel document, grabs values by column, replaces null v
 Dynamo does not currently provide an OOTB node for Revit Placeholder Sheets so we will need to use Python code and the Revit API.
 
 {% highlight python %}
-# Python Node for Dynamo
+# Python Code for Dynamo
 # Excel Sheet Index to Revit Placeholder Sheets
 # Version 0.3
 # Coded by Andrew King
@@ -105,7 +105,7 @@ This definition grabs all sheets in the model and feeds that data into a Python 
 Similar to above, we will use Python and the Revit API to delete all Placeholder Sheets in the model. Non-placeholder sheets (visibile in the project browser) will remain.
 
 {% highlight python %}
-# Python Node for Dynamo
+# Python Code for Dynamo
 # Purge Existing Placeholder Sheets
 # Version 0.1
 # Coded by Andrew King
