@@ -14,7 +14,7 @@ tags:
   - python
 ---
 
-This Dynamo definition and Python code converts an Excel Sheet Index into Revit Placeholder Sheets.
+Dynamo definition and Python code to convert an Excel Sheet Index into Revit Placeholder Sheets.
 
 <!--more-->
 

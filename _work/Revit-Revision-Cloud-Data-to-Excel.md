@@ -16,7 +16,7 @@ redirect_from:
   - /work/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo/
 ---
 
-This Dynamo definition and Python code extracts revision cloud data from Revit and writes it to Excel.
+Dynamo definition and Python code to extract revision cloud data from Revit.
 
 <!--more-->
 
