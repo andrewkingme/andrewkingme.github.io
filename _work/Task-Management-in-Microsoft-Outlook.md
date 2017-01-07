@@ -1,21 +1,23 @@
 ---
 layout: article
-title: "Task Management in Microsoft Outlook with Visual Basic"
+title: "Task Management in Microsoft Outlook"
 date: 2014-06-05 08:01:00
-cover: /work/img/Task-Management-in-Microsoft-Outlook-with-Visual-Basic-Cover.png
+cover: /work/img/Task-Management-in-Microsoft-Outlook-Cover.png
 collection: work
 tags:
   - all
   - code
   - visualbasic
   - outlook
+redirect_from:
+  - /work/Task-Management-in-Microsoft-Outlook-with-Visual-Basic/
 ---
 
 Visual Basic for Applications (Macro) code to count tasks in Microsoft Outlook.
 
 <!--more-->
 
-{% include image.html image="Task-Management-in-Microsoft-Outlook-with-Visual-Basic-001.png" caption="Tasks in Microsoft Outlook, WWP Task Report Button (Upper Right)" %}
+{% include image.html image="Task-Management-in-Microsoft-Outlook-001.png" caption="Tasks in Microsoft Outlook, WWP Task Report Button (Upper Right)" %}
 
 WWP Task Report for Outlook (Visual Basic for Applications Code):
 
@@ -36,18 +38,18 @@ WWP Task Report for Outlook (Visual Basic for Applications Code):
 Public Sub WWPTaskReport()
     Dim MsgBoxTitle As String
     MsgBoxTitle = "WWP Task Report for Outlook"
-    
+
     Dim objOutlook As Outlook.Application
     Dim objSelection As Outlook.Selection
     Dim objItem As Object
-        
+
     Dim PlannedWork As Long
     Dim ActualWork As Long
     Dim ImprovisedWork As Long
     PlannedWork = 0
     ActualWork = 0
     ImprovisedWork = 0
-            
+
     Dim AnticipatedTotal As Integer
     Dim PlannedTotal As Integer
     Dim ImprovisedTotal As Integer
@@ -58,10 +60,10 @@ Public Sub WWPTaskReport()
     ImprovisedTotal = 0
     CompletedTotal = 0
     PromisedTotal = 0
-    
+
     Dim LeanCategoryCount As Integer
     LeanCategoryCount = 0
-    
+
     Dim UncategorizedError As String
     Dim MultipleCategoriesError As String
     UncategorizedError = ""
@@ -71,11 +73,11 @@ Public Sub WWPTaskReport()
 
     Set objOutlook = CreateObject("Outlook.Application")
     Set objSelection = objOutlook.ActiveExplorer.Selection
-    
+
     If objSelection.Count > 0 Then
         For Each objItem In objSelection
             If objItem.Class = olTask Then
-            
+
                 'Total Planned Work and Actual Work
                 PlannedWork = PlannedWork + objItem.TotalWork
                 ActualWork = ActualWork + objItem.ActualWork
@@ -85,39 +87,39 @@ Public Sub WWPTaskReport()
                     AnticipatedTotal = AnticipatedTotal + 1
                     LeanCategoryCount = LeanCategoryCount + 1
                 End If
-            
+
                 'Count Planned Tasks
                 If LCase(objItem.Categories) Like "*planned*" Then
                     PlannedTotal = PlannedTotal + 1
                     LeanCategoryCount = LeanCategoryCount + 1
                 End If
-            
+
                 'Count Improvised Tasks, Total Improvised Work
                 If LCase(objItem.Categories) Like "*improvised*" Then
                     ImprovisedTotal = ImprovisedTotal + 1
                     ImprovisedWork = ImprovisedWork + objItem.ActualWork
                     LeanCategoryCount = LeanCategoryCount + 1
                 End If
-            
+
                 'Count Completed Tasks
                 If objItem.Complete = True Then
                     CompletedTotal = CompletedTotal + 1
                 End If
-                
+
                 'Count Promised Tasks
                 PromisedTotal = objSelection.Count
-            
+
                 'Lean Categorization Warnings
                 If LeanCategoryCount = 0 Then
                     UncategorizedError = vbNewLine & vbNewLine & vbNewLine & vbNewLine & "Warning: Lean category not assigned for one or more tasks. Task totals may be inaccurate."
                 End If
-                
+
                 If LeanCategoryCount > 1 Then
                     MultipleCategoriesError = vbNewLine & vbNewLine & vbNewLine & vbNewLine & "Warning: Multiple lean categories assigned to a single task. Task totals may be inaccurate."
                 End If
-                
+
                 LeanCategoryCount = 0
-            
+
             Else
                 Result = MsgBox("Incorrect selection. Only tasks are supported.", vbCritical, MsgBoxTitle)
                 Exit Sub
@@ -144,4 +146,4 @@ Public Function HoursMinsMsg(TotalMinutes As Long) As String
 End Function
 {% endhighlight %}
 
-{% include image.html image="Task-Management-in-Microsoft-Outlook-with-Visual-Basic-002.png" %}
+{% include image.html image="Task-Management-in-Microsoft-Outlook-002.png" %}
