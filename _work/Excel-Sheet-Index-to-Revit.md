@@ -24,13 +24,13 @@ Architects typically include a combined sheet index for all disciplines at the b
 
 Rather than typing incoming sheet information line-by-line into a Revit schedule, Dynamo and Python can help convert Excel data into Revit Placeholder Sheets. Manual entry that could have taken hours (on a large project with hundreds of incoming drawing sheets) can now be completed in seconds.
 
-### Dynamo Definition: Excel Sheet Index to Revit
+### Dynamo Definition: Excel Sheet Index to Revit Placeholder Sheets
 
 This definition opens an Excel document, grabs values by column, replaces null values with "" to avoid a list mismatch, and feeds that data into a Python node.
 
 {% include image.html image="Excel-Sheet-Index-to-Revit-001.png" %}
 
-### Python Code: Excel Sheet Index to Revit
+### Python Code: Excel Sheet Index to Revit Placeholder Sheets
 
 Dynamo does not currently provide an OOTB node for Revit Placeholder Sheets so we will need to use Python code and the Revit API.
 
