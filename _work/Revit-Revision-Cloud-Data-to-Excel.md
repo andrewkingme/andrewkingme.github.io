@@ -16,13 +16,13 @@ redirect_from:
   - /work/Revit-Revision-Cloud-Data-to-Excel-via-Dynamo/
 ---
 
-Dynamo definition and Python code to extract revision cloud data from Revit.
+Extract revision cloud data from Revit using Dynamo and Python.
 
 <!--more-->
 
 ### OOTB Revit Revision Schedule Limitations
 
-OOTB Revit can schedule the following revision parameters in a title block family. Instance parameters (Mark and Comments), sheet numbers, and sheet names are *not supported*.
+Revit can schedule the following revision parameters in a title block family. However, instance parameters (Mark and Comments), sheet numbers, and sheet names are *not supported out-of-the-box*.
 
 * Revision Sequence
 * Revision Number
@@ -31,7 +31,9 @@ OOTB Revit can schedule the following revision parameters in a title block famil
 * Issued to
 * Issued by
 
-The Dynamo definition and Python code below expands on OOTB functionality to generate an itemized list of revisions including instance parameters, sheet numbers, and sheet names.
+### Expanding on OOTB Functionality
+
+Dynamo and Python can expand on OOTB functionality to generate an itemized list of revisions including previously unavailable instance parameters, sheet numbers, and sheet names. The definition and code in this post will extract the following.
 
 * Sheet Number
 * Sheet Name
@@ -152,7 +154,7 @@ Part 2 of the definition extracts the relevant parameter values, builds an itemi
 
 {% include image.html image="Revit-Revision-Cloud-Data-to-Excel-001b.png" %}
 
-### Complete Dynamo Definition
+### Complete Graph
 
 Simple, efficient output of Revit revision cloud data.
 
