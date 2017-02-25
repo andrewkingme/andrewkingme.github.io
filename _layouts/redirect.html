@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+{% include license.html %}
+{% include head.html %}
+<body>
+  {% include header.html %}
+
+  <section>
+    <div class="grid grid-pad">
+      <div class="col-4-12">
+        <span class="title">{{ page.title }}</span>
+      </div>
+      <div class="col-8-12">
+        <a href="{{ page.redirect.to }}">{{ page.redirect.to }}</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
