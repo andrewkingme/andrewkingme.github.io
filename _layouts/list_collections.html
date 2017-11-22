@@ -11,7 +11,7 @@
         <span class="title">{{ page.title }}</span>
       </div>
       <div class="col-8-12">
-        {% assign collection = site.[page.collection] | sort: 'date' | reverse %}
+        {% assign collection = site[page.collection] | sort: 'date' | reverse %}
         {% for post in collection %}
           {% if post.tags contains page.tag %}
             <a href="{{ post.url }}" class="collections link_remove_hover">

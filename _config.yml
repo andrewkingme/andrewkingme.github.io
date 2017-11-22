@@ -12,7 +12,7 @@ collections:
   hike:
     output: true
     permalink: /hike/:path/
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 sass:
