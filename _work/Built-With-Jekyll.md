@@ -58,7 +58,7 @@ article.html _layout for Jekyll build:
 {% include head.html %}
 <body>
   {% include header.html %}
-  
+
   <section>
     <div class="grid grid-pad">
       <div class="col-4-12">
