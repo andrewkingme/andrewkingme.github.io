@@ -162,7 +162,7 @@ Simple, efficient output of Revit revision cloud data.
 
 ### Result
 
-The Dynamo graph writes directly to the *Revision Data* tab. Using a Pivot Table in Excel, the raw data is converted to a user friendly format.
+The Dynamo graph writes directly to the *Revision Data* tab in Excel. Using a Pivot Table, the raw data is converted to a user friendly format.
 
 {% include image.html image="Revit-Revision-Cloud-Data-to-Excel-002.png" caption="Excel Output" %}
 
