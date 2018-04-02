@@ -18,7 +18,7 @@ Use Dynamo, Python, and Excel to synchronize Revit key schedules across multiple
 
 <!--more-->
 
-On a campus-style project with 25 Revit files and a regularly changing area program, our team needed a workflow to generate an overall area schedule efficiently. Updating a single key schedule with the latest revisions could take up to one hour. Multiply that by 25 files and our team was looking at 25 hours of tedious key schedule revisions- in addition to potential issues with inconsistency.
+On a campus-style project with 25 Revit files and a regularly changing area program, our team needed a workflow to generate an overall area schedule efficiently. Updating a single key schedule with the latest revisions could take up to one hour. Multiply that by 25 files and our team was looking at 25 hours of tedious key schedule revisions- in addition to potential issues with consistency.
 
 ### Key Schedules and Multiple Revit Files
 
