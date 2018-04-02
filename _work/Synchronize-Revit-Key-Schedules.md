@@ -101,7 +101,7 @@ The first half of the Dynamo definition generates an ExcelList and a RevitList a
 
 {% include image.html image="Synchronize-Revit-Key-Schedules-004a.png" %}
 
-Dynamo does not currently provide an OOTB node for Revit key schedules. The following Python code will return all individual keys in a key schedule. (Credit to Konrad Sobon for [this post](https://forums.autodesk.com/t5/revit-api-forum/key-schedule-revit-api/td-p/5449134), which explains how the Revit API treats keys in a Revit key schedule.)
+Dynamo does not currently provide an OOTB node for Revit key schedules. The following Python code will return every key in a key schedule. (Credit to Konrad Sobon for [this post](https://forums.autodesk.com/t5/revit-api-forum/key-schedule-revit-api/td-p/5449134), which explains how the Revit API treats keys in a Revit key schedule.)
 
 {% highlight python %}
 # Python Node for Dynamo
@@ -202,7 +202,7 @@ TransactionManager.Instance.TransactionTaskDone()
 OUT = newKeys
 {% endhighlight %}
 
-18 parameters are assigned using the `SynchronizeKeySchedule.SetParameters` custom node.
+18 parameters are assigned using a `SynchronizeKeySchedule.SetParameters` custom node.
 
 {% include image.html image="Synchronize-Revit-Key-Schedules-005.png" %}
 
@@ -214,7 +214,7 @@ Once setup, modifications are easy. Simply open the Dynamo definition and run it
 
 ### Result
 
-Key schedule modifications that would have taken hours (25 hours in the case study above) now complete in just a few seconds per file, with consistently accurate results.
+Key schedule modifications that would have taken hours (25 hours in the example above) now complete in just a few seconds per file, with consistently accurate results.
 
 {% include image.html image="Synchronize-Revit-Key-Schedules-007.png" caption="Key Schedule in Revit" %}
 
