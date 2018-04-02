@@ -30,7 +30,7 @@ While key schedules are simple to setup and commonly used to assign multiple par
 
 * **Option 2: Use Dynamo and Python to synchronize changes from an Excel master.**
 
-  This post will demonstrate a method to synchronize a regularly changing key schedule across multiple Revit files using Dynamo, Python, and an Excel master.
+  This post will demonstrate a method to synchronize a regularly changing key schedule across multiple Revit files using Dynamo, Python, and Excel.
 
 ### Part 1: Add Matching Parameters to Excel and Revit
 
