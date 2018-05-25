@@ -1,7 +1,6 @@
 /*
   Simple Grid
-  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
-  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Project Page - https://thisisdallas.github.com/Simple-Grid/
   Author - Dallas Bass
   Site - dallasbass.com
 */
@@ -137,7 +136,7 @@ print {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	
+
 	[class*='col-'] {
 		width: auto;
 		float: none;
@@ -148,11 +147,11 @@ print {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-  
+
     .header-mobile > [class*='col-'] {
         margin-bottom: 0px;
     }
-  
+
     .hide-on-mobile {
 		display: none !important;
 		width: 0;

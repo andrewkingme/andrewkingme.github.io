@@ -12,7 +12,7 @@ redirect_from:
   - /work/NCAA-Bracket-in-Autodesk-Revit-with-Dynamo/
 ---
 
-NCAA bracket in [Dynamo](http://dynamobim.com). Inspired by [@pix3lot](https://twitter.com/pix3lot/status/577532781426798592).
+NCAA bracket in [Dynamo](http://dynamobim.org/). Inspired by [@pix3lot](https://twitter.com/pix3lot/status/577532781426798592).
 
 <!--more-->
 

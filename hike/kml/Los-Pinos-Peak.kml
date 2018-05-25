@@ -2,14 +2,14 @@
 <kml xmlns="http://earth.google.com/kml/2.1" xmlns:trails="http://www.google.com/kml/trails/1.0">
 <Document>
   <name>Los Pinos Peak</name>
-  
+
   <Placemark>
     <name>Los Pinos Peak</name>
     <description>Trailhead</description>
     <Style>
       <IconStyle>
         <Icon>
-          <href>http://andrewkingme.com/hike/kml/ico/hike_ff00cc.png</href>
+          <href>https://andrewkingme.com/hike/kml/ico/hike_ff00cc.png</href>
         </Icon>
         <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction" />
       </IconStyle>
@@ -20,7 +20,7 @@
       </coordinates>
     </Point>
   </Placemark>
-  
+
   <Placemark>
     <name>Los Pinos Peak</name>
     <description>GPS Data from 2014/04/15 Hike</description>
@@ -709,6 +709,6 @@
       </coordinates>
     </LineString>
   </Placemark>
-  
+
 </Document>
 </kml>

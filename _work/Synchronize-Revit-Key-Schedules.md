@@ -109,7 +109,7 @@ Dynamo does not currently provide an OOTB node for Revit key schedules. The foll
 # Output: Keys
 # Version 0.1
 # Coded by Andrew King
-# http://andrewkingme.com
+# https://andrewkingme.com
 #
 # 2017-06-20 Version 0.1
 # Hello World
@@ -151,7 +151,7 @@ The following Python code creates new keys and outputs a list to Dynamo for para
 # Output: Keys Added
 # Version 0.1
 # Coded by Andrew King
-# http://andrewkingme.com
+# https://andrewkingme.com
 #
 # 2017-06-20 Version 0.1
 # Hello World

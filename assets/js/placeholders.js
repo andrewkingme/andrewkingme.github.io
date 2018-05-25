@@ -1,10 +1,10 @@
-/* 
+/*
  * The MIT License
  *
  * Copyright (c) 2012 James Allardice
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), 
- * to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
  * and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
  *
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -144,7 +144,7 @@
 
     // Avoid IE9 activeElement of death when an iframe is used.
     // More info:
-    // http://bugs.jquery.com/ticket/13393
+    // https://bugs.jquery.com/ticket/13393
     // https://github.com/jquery/jquery/commit/85fc5878b3c6af73f42d61eedf73013e7faae408
     function safeActiveElement() {
         try {

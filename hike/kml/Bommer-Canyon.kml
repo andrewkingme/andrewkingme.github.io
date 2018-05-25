@@ -2,14 +2,14 @@
 <kml xmlns="http://earth.google.com/kml/2.1" xmlns:trails="http://www.google.com/kml/trails/1.0">
 <Document>
   <name>Bommer Canyon</name>
-  
+
   <Placemark>
     <name>Bommer Canyon</name>
     <description>Trailhead</description>
     <Style>
       <IconStyle>
         <Icon>
-          <href>http://andrewkingme.com/hike/kml/ico/hike_ff00cc.png</href>
+          <href>https://andrewkingme.com/hike/kml/ico/hike_ff00cc.png</href>
         </Icon>
         <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction" />
       </IconStyle>
@@ -20,7 +20,7 @@
       </coordinates>
     </Point>
   </Placemark>
-  
+
   <Placemark>
     <name>Bommer Canyon</name>
     <description>GPS Data from 2015/05/17 Hike</description>
@@ -1055,6 +1055,6 @@
       </coordinates>
     </LineString>
   </Placemark>
-  
+
 </Document>
 </kml>
