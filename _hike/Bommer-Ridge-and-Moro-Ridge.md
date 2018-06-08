@@ -8,6 +8,7 @@ tags:
   - all
   - orangecounty
   - lagunacoast
+  - california
 ---
 
 {% include image.html image='Bommer-Ridge-and-Moro-Ridge-001.jpg' %}

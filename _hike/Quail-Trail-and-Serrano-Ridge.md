@@ -8,6 +8,7 @@ tags:
   - all
   - orangecounty
   - lagunacoast
+  - california
 ---
 
 {% include image.html image='Quail-Trail-and-Serrano-Ridge-001.jpg' %}

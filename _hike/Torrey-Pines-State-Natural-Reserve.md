@@ -7,8 +7,9 @@ collection: hike
 tags:
   - all
   - torreypines
-  - sandiego
   - lajolla
+  - sandiegocounty
+  - california
 
 
 ---

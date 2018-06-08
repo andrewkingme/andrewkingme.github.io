@@ -1,6 +1,6 @@
 ---
 layout: list_collections
-title: "/hike #sandiego"
+title: "/hike #california"
 collection: hike
-tag: sandiego
+tag: california
 ---

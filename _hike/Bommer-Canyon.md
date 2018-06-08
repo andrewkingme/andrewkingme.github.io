@@ -8,6 +8,7 @@ tags:
   - all
   - orangecounty
   - lagunacoast
+  - california
 ---
 
 {% include image.html image='Bommer-Canyon-001.jpg' %}

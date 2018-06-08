@@ -8,6 +8,7 @@ tags:
   - all
   - orangecounty
   - lagunacoast
+  - california
 ---
 
 {% include image.html image='Top-of-the-World-001.jpg' %}
