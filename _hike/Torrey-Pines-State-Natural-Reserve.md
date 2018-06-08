@@ -6,12 +6,10 @@ cover: /hike/img/Torrey-Pines-State-Natural-Reserve-Cover.jpg
 collection: hike
 tags:
   - all
-  - torreypines
-  - lajolla
   - sandiegocounty
   - california
-
-
+  - torreypines
+  - lajolla
 ---
 
 {% include image.html image='Torrey-Pines-State-Natural-Reserve-001.jpg' %}

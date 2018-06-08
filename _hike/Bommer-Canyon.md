@@ -7,8 +7,8 @@ collection: hike
 tags:
   - all
   - orangecounty
-  - lagunacoast
   - california
+  - lagunacoast
 ---
 
 {% include image.html image='Bommer-Canyon-001.jpg' %}

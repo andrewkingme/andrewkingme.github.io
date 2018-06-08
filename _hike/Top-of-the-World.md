@@ -7,8 +7,8 @@ collection: hike
 tags:
   - all
   - orangecounty
-  - lagunacoast
   - california
+  - lagunacoast
 ---
 
 {% include image.html image='Top-of-the-World-001.jpg' %}

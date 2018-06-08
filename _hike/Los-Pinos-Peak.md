@@ -7,8 +7,8 @@ collection: hike
 tags:
   - all
   - orangecounty
-  - clevelandnationalforest
   - california
+  - clevelandnationalforest
 ---
 
 {% include image.html image='Los-Pinos-Peak-001.jpg' %}
