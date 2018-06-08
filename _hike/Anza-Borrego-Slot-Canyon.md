@@ -6,9 +6,9 @@ cover: /hike/img/Anza-Borrego-Slot-Canyon-Cover.jpg
 collection: hike
 tags:
   - all
-  - anzaborrego
   - sandiegocounty
   - california
+  - anzaborrego
 ---
 
 {% include image.html image='Anza-Borrego-Slot-Canyon-001.jpg' %}
@@ -19,4 +19,4 @@ tags:
 
 {% include image.html image='Anza-Borrego-Slot-Canyon-003.jpg' %}
 
-{% include googlemaps.html kml="/hike/kml/Awaawapuhi-Trail.kml" %}
+{% include googlemaps.html kml="/hike/kml/Anza-Borrego-Slot-Canyon.kml" %}
