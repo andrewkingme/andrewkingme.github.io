@@ -8,7 +8,7 @@ function initMap() {
     zoomControl: true,
     mapTypeControl: true,
   });
-  
+
   {% for kml in include.kml %}
   var ctaLayer = new google.maps.KmlLayer({
     url: '{{ site.url}}{{ kml }}?time={{ site.time | date_to_xmlschema }}',
@@ -17,4 +17,4 @@ function initMap() {
   {% endfor %}
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoXsfYRsjBIudkbtzruR_hcMqc7fBa0GQ&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdyrLPxDXDDrbxCrcgyYujVHgbV7OBK6o&callback=initMap" async defer></script>
