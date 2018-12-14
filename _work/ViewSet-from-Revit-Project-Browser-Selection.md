@@ -114,7 +114,7 @@ viewSet = ViewSet()
 
 # Add incoming views/sheets to the ViewSet.
 for v in views:
-	viewSet.Insert(v)
+  viewSet.Insert(v)
 
 # Activate the PrintManager.
 printManager = DocumentManager.Instance.CurrentDBDocument.PrintManager
