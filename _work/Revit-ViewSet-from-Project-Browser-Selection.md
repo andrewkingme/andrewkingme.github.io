@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "ViewSet from Revit Project Browser Selection"
+title: "Revit Sheet Set (ViewSet) from Project Browser Selection"
 date: 2018-12-14 02:53:00
-cover: /work/img/ViewSet-from-Revit-Project-Browser-Selection-Cover.png
+cover: /work/img/Revit-ViewSet-from-Project-Browser-Selection-Cover.png
 collection: work
 tags:
   - all
@@ -11,23 +11,25 @@ tags:
   - revit
   - dynamo
   - python
+redirect_from:
+  - /work/ViewSet-from-Revit-Project-Browser-Selection/
 ---
 
-Create a Revit ViewSet from a Project Browser selection.
+Use Dynamo and Python to create a Revit Sheet Set (ViewSet) from a Project Browser selection.
 
 <!--more-->
 
 ### Avoiding the ViewSet Dialog
 
-The Revit ViewSet dialog needs improvement. It's difficult to find the views you want to include and users often modify or remove existing ViewSet assignments inadvertently due to bad user interface design.
+The Revit ViewSet dialog utilizes an inefficient user interface that often results in slow view selection and unintentional modification of existing ViewSets.
 
-Assuming your Project Browser is well organized, wouldn't it be nice to select a series of views or sheets and generate a new ViewSet from that selection? (Right click in a future release?) With Dynamo we can utilize the Project Browser to select views and create a ViewSet- skipping the ViewSet dialog altogether.
+Assuming your Project Browser is well organized, wouldn't it be nice to select a series of views or sheets and generate a new ViewSet from that selection? (Right click in a future release?) With Dynamo we can select views from the Revit Project Browser and create a ViewSet- skipping the ViewSet dialog altogether.
 
 ### Dynamo Definition: ViewSet from Revit Project Browser Selection
 
 Most of the work happens within Python Script nodes.
 
-{% include image.html image="ViewSet-from-Revit-Project-Browser-Selection-001.png" %}
+{% include image.html image="Revit-ViewSet-from-Project-Browser-Selection-001.png" %}
 
 ### Python Code: Output Selected Elements
 
@@ -132,6 +134,8 @@ OUT = output
 
 ### Result
 
-Here is the result. ViewSet creation in seconds, directly from a Revit Project Browser selection.
+Here is a sample ViewSet created using the code above.
 
-{% include image.html image="ViewSet-from-Revit-Project-Browser-Selection-002.png" caption="ViewSet Dialog" %}
+{% include image.html image="Revit-ViewSet-from-Project-Browser-Selection-002.png" caption="Sample ViewSet" %}
+
+Imagine the possibilities- For example, exporting individual views from a specific sheet. Instead of matching names in the ViewSet dialog, we simply expand the sheet in the Project Browser, select the desired views, and run the script to create a new ViewSet.
