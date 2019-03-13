@@ -15,7 +15,7 @@ redirect_from:
   - /work/Model-Health-Report/
 ---
 
-With the introduction of `.GetWarnings()` in the Revit 2018 API, I recently retooled my model health check scripts from scratch. For those out there with a similar mindset, here is a very approachable starting point that can be easily expanded to include your desired metrics.
+With the introduction of `.GetWarnings()` in the Revit 2018 API, I recently retooled my model health scripts from scratch. For those out there with a similar mindset, here is a very approachable starting point that can be easily expanded to include your desired metrics.
 
 <!--more-->
 
