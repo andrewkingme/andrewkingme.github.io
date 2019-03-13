@@ -76,6 +76,6 @@ The second half writes a summary of the report to a text note on the Revit Start
 
 ### Result
 
-This framework can be expanded to include counts of specific warnings- or any combination of data-points from your model.
+This framework can be expanded to include counts of specific warnings- or any combination of data-points from your model. Here is the text note that was written to the Revit Starting View.
 
 {% include image.html image="Revit-Model-Health-Report-002.png" %}
