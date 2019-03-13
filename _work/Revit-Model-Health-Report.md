@@ -76,6 +76,6 @@ The second half writes a summary of the report to a text note on the Revit Start
 
 ### Result
 
-This framework can be expanded to include counts of specific warnings- or any combination of data-points from your model. Here is the text note that was written to the Revit Starting View.
+Expanding on this early framework- I'm thinking the end result will include a few dozen data-points, presented on the Revit Starting View, with updating available via Dynamo Player.
 
 {% include image.html image="Revit-Model-Health-Report-002.png" %}
