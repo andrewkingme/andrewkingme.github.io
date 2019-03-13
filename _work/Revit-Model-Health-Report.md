@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "Model Health Report"
+title: "Revit Model Health Report with .GetWarnings()"
 date: 2019-03-06 03:09:00
-cover: /work/img/Model-Health-Report-Cover.png
+cover: /work/img/Revit-Model-Health-Report-Cover.png
 collection: work
 tags:
   - all
@@ -11,17 +11,19 @@ tags:
   - revit
   - dynamo
   - python
+redirect_from:
+  - /work/Model-Health-Report/
 ---
 
-With the introduction of `.GetWarnings()` in the Revit 2018 API, I recently started retooling my model health check scripts from scratch. For those out there with a similar mindset, here is a very approachable starting point that can be easily expanded to include your desired metrics.
+With the introduction of `.GetWarnings()` in the Revit 2018 API, I recently retooled my model health check scripts from scratch. For those out there with a similar mindset, here is a very approachable starting point that can be easily expanded to include your desired metrics.
 
 <!--more-->
 
 ### Dynamo Definition
 
-The following definition is a framework for my ultimate goal to include a few dozen data-points.
+The following definition is an expandable framework currently outputting three data-points.
 
-{% include image.html image="Model-Health-Report-001.png" %}
+{% include image.html image="Revit-Model-Health-Report-001.png" %}
 
 ### Python Code: Get Warnings
 
@@ -64,16 +66,16 @@ OUT = warnings, descriptions, elements
 
 The first half of the graph collects warnings and imports.
 
-{% include image.html image="Model-Health-Report-001a.png" %}
+{% include image.html image="Revit-Model-Health-Report-001a.png" %}
 
 ### Dynamo Definition: Write Summary to Revit Starting View
 
 The second half writes a summary of the report to a text note on the Revit Starting View.
 
-{% include image.html image="Model-Health-Report-001b.png" %}
+{% include image.html image="Revit-Model-Health-Report-001b.png" %}
 
 ### Result
 
-Expanding on this early framework- I'm thinking the end result will include a few dozen data-points, presented on the Revit Starting View, with updating available via Dynamo Player.
+This framework can be expanded to include counts of specific warnings- or any combination of data-points from your model.
 
-{% include image.html image="Model-Health-Report-002.png" %}
+{% include image.html image="Revit-Model-Health-Report-002.png" %}
