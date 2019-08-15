@@ -16,7 +16,7 @@ RhinoScript and Python development of an attractor-weighted grid.
 <!--more-->
 
 
-{% include video.html image="Attractor-Scripts-001.png" mp4="Attractor-Scripts-001.mp4" webm="Attractor-Scripts-001.webm" ogg="Attractor-Scripts-001.ogg" %}
+{% include video.html image="Attractor-Scripts-001.png" mp4="Attractor-Scripts-001.mp4" webm="Attractor-Scripts-001.webm" ogg="Attractor-Scripts-001.ogg" aspectratio="16-9" %}
 
 {% include image.html image="Attractor-Scripts-002.png" caption="ABS Print of the RhinoScript Code" %}
 

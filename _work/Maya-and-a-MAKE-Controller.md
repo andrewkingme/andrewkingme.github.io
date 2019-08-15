@@ -17,7 +17,7 @@ Flow of Information: [Input Sensors] to [Breadboard] to [MAKE Controller] to [US
 
 {% include image.html image="Maya-and-a-MAKE-Controller-001.png" caption="Input Sensors, Breadboard, and Make Controller" %}
 
-{% include video.html image="Maya-and-a-MAKE-Controller-002.png" mp4="Maya-and-a-MAKE-Controller-002.mp4" webm="Maya-and-a-MAKE-Controller-002.webm" ogg="Maya-and-a-MAKE-Controller-002.ogg" caption="mchelper, Flash Connector, and MEL Script in Maya" %}
+{% include video.html image="Maya-and-a-MAKE-Controller-002.png" mp4="Maya-and-a-MAKE-Controller-002.mp4" webm="Maya-and-a-MAKE-Controller-002.webm" ogg="Maya-and-a-MAKE-Controller-002.ogg" caption="mchelper, Flash Connector, and MEL Script in Maya" aspectratio="16-9" %}
 
 The following MEL Script captures three input devices for form creation and a fourth input device for curation:
 
@@ -49,4 +49,4 @@ $count1++;
 }
 {% endhighlight %}
 
-{% include video.html image="Maya-and-a-MAKE-Controller-003.png" mp4="Maya-and-a-MAKE-Controller-003.mp4" webm="Maya-and-a-MAKE-Controller-003.webm" ogg="Maya-and-a-MAKE-Controller-003.ogg" caption="Screen Capture of Curation in Maya" %}
+{% include video.html image="Maya-and-a-MAKE-Controller-003.png" mp4="Maya-and-a-MAKE-Controller-003.mp4" webm="Maya-and-a-MAKE-Controller-003.webm" ogg="Maya-and-a-MAKE-Controller-003.ogg" caption="Screen Capture of Curation in Maya" aspectratio="16-9" %}

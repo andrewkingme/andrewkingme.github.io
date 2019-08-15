@@ -1,4 +1,4 @@
-<div class="videoWrapper">
+<div class="videoWrapper videoAspectRatio{{ include.aspectratio }}">
   <a href="#{{ include.image }}" class="zoom-in">
     <video autoplay loop muted poster="/{{ page.collection }}/img/{{ include.image }}">
       <source src="/{{ page.collection }}/img/{{ include.mp4 }}" type="video/mp4">
