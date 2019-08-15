@@ -109,7 +109,7 @@ The definition continues by filtering out `AIR Block(0)` air blocks and generati
 
 ### Result
 
-Block locations are posted to Mincraft Chat using `mc.postToChat()` and then output to Dynamo.
+Block locations are posted to Minecraft Chat using `mc.postToChat()` and then output to Dynamo.
 
 {% include image.html image="Streaming-Minecraft-Blocks-to-Dynamo-003.png" %}
 
