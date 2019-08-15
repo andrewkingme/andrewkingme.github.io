@@ -21,7 +21,7 @@ Originally developed for the Raspberry Pi Edition of Minecraft, the [Minecraft P
 
 ### Dynamo Definition Part 1
 
-The definition below obtains the current player position, generates a cross product of coordinates from `-5..5` in `x,y,x` around the player, and obtains the Minecraft blocks at those postions. `player.getPos()` and `getBlock()` are custom Python nodes. `DateTime.Now` allows the graph to run periodically.
+The definition below obtains the current player position, generates a cross product of coordinates from `-5..5` in `x,y,z` around the player, and obtains the Minecraft blocks at those postions. `player.getPos()` and `getBlock()` are custom Python nodes. `DateTime.Now` allows the graph to run periodically.
 
 {% include image.html image="Streaming-Minecraft-Blocks-to-Dynamo-002a.png" %}
 
