@@ -4,6 +4,7 @@ title: "Built With Jekyll"
 date: 2014-07-17 06:57:00
 cover: /work/img/Built-With-Jekyll-Cover.png
 collection: work
+funding: false
 tags:
   - all
   - code

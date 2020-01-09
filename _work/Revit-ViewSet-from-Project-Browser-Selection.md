@@ -4,6 +4,7 @@ title: "Revit Sheet Set (ViewSet) from Project Browser Selection"
 date: 2018-12-14 02:53:00
 cover: /work/img/Revit-ViewSet-from-Project-Browser-Selection-Cover.png
 collection: work
+funding: true
 tags:
   - all
   - visualprogramming

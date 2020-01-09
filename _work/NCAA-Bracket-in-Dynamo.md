@@ -4,6 +4,7 @@ title: "NCAA Bracket in Dynamo"
 date: 2015-03-21 04:02:00
 cover: /work/img/NCAA-Bracket-in-Dynamo-Cover.png
 collection: work
+funding: false
 tags:
   - all
   - visualprogramming

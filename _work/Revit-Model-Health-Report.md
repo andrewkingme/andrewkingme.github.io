@@ -4,6 +4,7 @@ title: "Revit Model Health Report with .GetWarnings()"
 date: 2019-03-06 03:09:00
 cover: /work/img/Revit-Model-Health-Report-Cover.png
 collection: work
+funding: false
 tags:
   - all
   - visualprogramming

@@ -4,6 +4,7 @@ title: "Task Management in Microsoft Outlook"
 date: 2014-06-05 08:01:00
 cover: /work/img/Task-Management-in-Microsoft-Outlook-Cover.png
 collection: work
+funding: false
 tags:
   - all
   - code

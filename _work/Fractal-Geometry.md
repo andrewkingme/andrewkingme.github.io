@@ -4,6 +4,7 @@ title: "Fractal Geometry"
 date: 2014-10-23 05:32:00
 cover: /work/img/Fractal-Geometry-Cover.png
 collection: work
+funding: false
 tags:
   - all
   - maya

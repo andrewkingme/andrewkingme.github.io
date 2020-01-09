@@ -4,6 +4,7 @@ title: "Excel Sheet Index to Revit Placeholder Sheets"
 date: 2017-01-06 03:40:00
 cover: /work/img/Excel-Sheet-Index-to-Revit-Cover.png
 collection: work
+funding: true
 tags:
   - all
   - visualprogramming

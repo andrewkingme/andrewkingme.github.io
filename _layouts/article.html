@@ -25,6 +25,9 @@
       <div class="col-8-12">
         {{ content }}
         {% include article_signoff.html %}
+        {% if page.funding %}
+          {% include article_funding.html %}
+        {% endif %}
       </div>
     </div>
   </section>
