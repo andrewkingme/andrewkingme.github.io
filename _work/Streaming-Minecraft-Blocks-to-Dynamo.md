@@ -14,7 +14,7 @@ tags:
   - minecraft
 ---
 
-Originally developed for the Raspberry Pi Edition of Minecraft, the [Minecraft Python API](https://www.stuffaboutcode.com/p/minecraft-api-reference.html) allows for manipulation of Minecraft via external Python code. This post utlizes the [Raspberry Jam Mod](https://github.com/arpruss/raspberryjammod) for [Minecraft Forge](https://files.minecraftforge.net) with the [Java Edition of Minecraft](https://www.minecraft.net/en-us/download/) to access a ported version of the API.
+The [Raspberry Pi Minecraft Python API](https://www.stuffaboutcode.com/p/minecraft-api-reference.html) allows for manipulation of Minecraft via external Python code. Utilizing a ported version of the API via [Raspberry Jam Mod](https://github.com/arpruss/raspberryjammod), [Minecraft Forge](https://files.minecraftforge.net), and the [Java Edition of Minecraft](https://www.minecraft.net/en-us/download/) we are able to access Minecraft Python calls in Dynamo.
 
 <!--more-->
 
