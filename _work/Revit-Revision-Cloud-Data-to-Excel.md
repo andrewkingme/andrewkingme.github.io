@@ -171,6 +171,6 @@ The Dynamo graph writes directly to the *Revision Data* tab in Excel. Using a Pi
 
 *Update: 05 Mar 2020*
 
-I'm often asked if it would be possible to utilize `.OwnerViewId` to pull sheet information directly from revision clouds. While this appears to work at the surface level, we will run into issues with Legends and Dependent Views. If your project utilizes revision clouds in views, the longer element collection route described above still makes the most sense. `.OwnerViewId` is, however, a viable solution if you are certain your project only has revisions on sheets.
+I'm often asked if it would be possible to utilize `.OwnerViewId` to pull sheet information directly from revision clouds. While this appears to work at the surface level, we will run into issues with *Legends* and *Dependent Views*. If your project utilizes revision clouds in views, the longer element collection route described above still makes the most sense. `.OwnerViewId` is, however, a viable solution if you are certain your project only has revisions on sheets.
 
-On large projects with heavy geometry, it is possible to run into long sheet generation times. In these instances, temporarily unloading *User-Created* worksets will significantly reduce run time. (Revision clouds are automatically placed on a view workset separate from user-created geometry.)
+On large projects with heavy geometry, it is possible to run into long sheet generation times. In those instances, temporarily unloading *User-Created* worksets will significantly reduce run time. (Revision clouds are automatically placed on a view workset separate from user-created geometry.)
