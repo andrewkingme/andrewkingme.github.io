@@ -22,9 +22,7 @@ Use Dynamo and Python to create a Revit Sheet Set (ViewSet) from a Project Brows
 
 ### Avoiding the ViewSet Dialog
 
-The Revit ViewSet dialog utilizes an inefficient user interface that often results in slow view selection and unintentional modification of existing ViewSets.
-
-Assuming your Project Browser is well organized, wouldn't it be nice to select a series of views or sheets and generate a new ViewSet from that selection? (Right click in a future release?) With Dynamo we can select views from the Revit Project Browser and create a ViewSet- skipping the ViewSet dialog altogether.
+Wouldn't it be nice to select a series of views or sheets and generate a new ViewSet (for publishing or printing) from that selection? With Dynamo we can select views from the Revit Project Browser and create a ViewSet- skipping the ViewSet dialog altogether.
 
 ### Dynamo Definition: ViewSet from Revit Project Browser Selection
 
@@ -138,5 +136,3 @@ OUT = output
 Here is a sample ViewSet created using the code above.
 
 {% include image.html image="Revit-ViewSet-from-Project-Browser-Selection-002.png" caption="Sample ViewSet" %}
-
-Imagine the possibilities- For example, exporting individual views from a specific sheet. Instead of matching names in the ViewSet dialog, we simply expand the sheet in the Project Browser, select the desired views, and run the script to create a new ViewSet.
