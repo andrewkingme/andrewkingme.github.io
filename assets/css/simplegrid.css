@@ -16,10 +16,6 @@
     padding-right: 20px;
 }
 
-[class*='col-']:last-of-type {
-	padding-right: 0px;
-}
-
 .grid {
 	width: 100%;
 	max-width: 1140px;
@@ -43,6 +39,10 @@
 }
 
 .grid-pad > [class*='col-']:last-of-type {
+	padding-right: 20px;
+}
+
+.grid-pad-right {
 	padding-right: 20px;
 }
 
