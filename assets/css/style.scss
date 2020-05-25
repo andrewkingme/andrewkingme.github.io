@@ -49,6 +49,20 @@ p {
   font-size: 24px;
 }
 
+.cryptosurround {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.cryptoaddress {
+  font-size: 10px;
+  word-wrap: break-word;
+  text-align: center;
+  width: 130px;
+  margin: 0 auto;
+}
+
 hr {
   border: 0;
   background: $color-2;
