@@ -63,6 +63,10 @@ p {
   margin: 0 auto;
 }
 
+.cryptosurround:hover .cryptoaddress {
+  text-decoration: underline;
+}
+
 hr {
   border: 0;
   background: $color-2;
