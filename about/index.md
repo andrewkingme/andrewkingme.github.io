@@ -3,7 +3,7 @@ layout: about
 title: /about
 ---
 
-Andrew King is a [Design Technology Specialist](https://www.linkedin.com/in/andrewkingme) at [WATG](https://www.watg.com/).
+Andrew King is a [Design Technology Specialist focusing on Building Information Modeling](https://www.linkedin.com/in/andrewkingme) at [WATG](https://www.watg.com/).
 
 andrewking(me) is hosted from [Jekyll](https://jekyllrb.com) source on [GitHub Pages](https://pages.github.com). Browse the source code at [https://github.com/andrewkingme/andrewkingme.github.io](https://github.com/andrewkingme/andrewkingme.github.io).
 
