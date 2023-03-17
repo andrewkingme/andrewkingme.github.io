@@ -4,7 +4,7 @@ url: https://andrewkingme.com
 timezone: Etc/UTC
 markdown: kramdown
 highlighter: rouge
-permalink: /news/:year/:month/:day/:title/
+permalink: /posts/:year/:month/:day/:title/
 collections:
   work:
     output: true
