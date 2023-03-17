@@ -2,7 +2,7 @@
 layout: article
 title: "Public Repository"
 date: 2015-05-31 19:35:00
-collection: news
+collection: posts
 tags:
   - all
   - github
