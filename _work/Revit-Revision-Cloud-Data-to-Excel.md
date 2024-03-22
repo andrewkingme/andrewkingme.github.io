@@ -4,7 +4,7 @@ title: "Revit Revision Cloud Data to Excel"
 date: 2016-02-06 22:12:00
 cover: /work/img/Revit-Revision-Cloud-Data-to-Excel-Cover.png
 collection: work
-funding: true
+funding: false
 tags:
   - all
   - visualprogramming

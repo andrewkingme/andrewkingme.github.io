@@ -4,7 +4,7 @@ title: "Synchronize Revit Key Schedules Using an Excel Master List"
 date: 2018-02-14 07:07:00
 cover: /work/img/Synchronize-Revit-Key-Schedules-Cover.png
 collection: work
-funding: true
+funding: false
 tags:
   - all
   - visualprogramming
