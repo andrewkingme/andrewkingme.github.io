@@ -1,14 +1,11 @@
-- name:   "#code"
-  url:    /work/tag/code/
-
-- name:   "#visualprogramming"
-  url:    /work/tag/visualprogramming/
-  
 - name:   "#revit"
   url:    /work/tag/revit/
 
-- name:   "#maya"
-  url:    /work/tag/maya/
+- name:   "#visualprogramming"
+  url:    /work/tag/visualprogramming/
+
+- name:   "#dynamo"
+  url:    /work/tag/dynamo/
   
-- name:   "#sciarc"
-  url:    /work/tag/sciarc/
+- name:   "#python"
+  url:    /work/tag/python/
