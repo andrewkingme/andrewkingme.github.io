@@ -20,13 +20,13 @@ While working on company standards like title blocks and tags, I wanted more pre
 
 Built-in Dynamo nodes like `Utilities.ParseExpressionByUnit` and `Utilities.ConvertByUnits` allow this script to function natively in both Metric and Imperial units.
 
-### Dynamo Graph
+### Dynamo Definition
 
 {% include image.html image="Specify-Text-Coordinates-001.png" %}
 
 ### Python Script: Obtain Coordinates of Selected Text Element
 
-Operating on the selection as a `TextElement` instead of `TextNote` allows us to modify Labels as well.
+Operating on the selection as a Text Element instead of Text Note allows us to modify Labels as well.
 
 {% highlight python %}
 import clr
@@ -47,7 +47,7 @@ OUT = textElementCoordinates
 
 ### Python Script: Obtain Width and Height of Selected Text Element
 
-Height is a read-only parameter that automatically adjusts with the Text Size and number of lines. It will be presented in the Input Dialog for information only.
+Height is a read-only parameter that automatically adjusts with the Text Size and number of lines. It will be presented in the Input Dialog as an unmodifiable value.
 
 {% highlight python %}
 import clr
@@ -67,7 +67,7 @@ OUT = textElementW, textElementH
 
 ### Python Script: Obtain Vertical Alignment and Horizontal Alignment of Selected Text Element
 
-The XYZ placement of a Text Element sits at the intersection of its vertical and horizontal alignment. For example, Top-Left. While alignment information is readily available within Revit, I wanted to also present it in the Input Dialog for convenience.
+The XYZ placement of a Text Element sits at the intersection of its vertical and horizontal alignment. For example, Top-Left. While alignment information is readily available within the Revit Properties Panel, I wanted to also present it in the Input Dialog for convenience.
 
 {% highlight python %}
 import clr
