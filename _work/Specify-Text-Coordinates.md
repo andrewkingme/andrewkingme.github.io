@@ -18,7 +18,7 @@ While working on company standards like title blocks and tags, I wanted more pre
 
 <!--more-->
 
-### Custom Dialog
+### Custom Input Dialog
 
 {% include image.html image="Specify-Text-Coordinates-003.png" %}
 
