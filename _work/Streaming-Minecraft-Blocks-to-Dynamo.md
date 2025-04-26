@@ -35,7 +35,7 @@ The definition below obtains the current player position, generates a cross prod
 # Minecraft player.getPos()
 # Version 0.1
 # Coded by Andrew King
-# https://andrewkingme.com
+# https://andrewk.ing
 #
 # 2019-08-13 Version 0.1
 # Hello World
@@ -68,7 +68,7 @@ OUT = playerPosx, playerPosy, playerPosz
 # Minecraft getBlock()
 # Version 0.1
 # Coded by Andrew King
-# https://andrewkingme.com
+# https://andrewk.ing
 #
 # 2019-08-13 Version 0.1
 # Hello World

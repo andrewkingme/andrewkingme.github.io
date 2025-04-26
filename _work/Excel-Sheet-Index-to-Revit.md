@@ -40,7 +40,7 @@ Dynamo does not currently provide an OOTB node for Revit Placeholder Sheets so w
 # Excel Sheet Index to Revit Placeholder Sheets
 # Version 0.3
 # Coded by Andrew King
-# https://andrewkingme.com
+# https://andrewk.ing
 #
 # 2017-01-03 Version 0.1
 # Hello World
@@ -110,7 +110,7 @@ Similar to above, we will use Python and the Revit API to delete all Placeholder
 # Purge Existing Placeholder Sheets
 # Version 0.1
 # Coded by Andrew King
-# https://andrewkingme.com
+# https://andrewk.ing
 #
 # 2017-01-03 Version 0.1
 # Hello World

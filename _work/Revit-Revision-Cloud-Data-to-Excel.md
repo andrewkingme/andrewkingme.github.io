@@ -60,7 +60,7 @@ The Python code filters through sheets and views-on-sheets, looking for revision
 # Output: Matching Sheets, Matching Revision Clouds, Referencing Views
 # Version 0.6
 # Coded by Andrew King
-# https://andrewkingme.com
+# https://andrewk.ing
 #
 # 2016-02-06 Version 0.1
 # Hello World

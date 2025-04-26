@@ -39,7 +39,7 @@ The first Python node outputs Revit elements from your current selection.
 # Output Selected Elements
 # Version 0.1
 # Coded by Andrew King
-# https://andrewkingme.com
+# https://andrewk.ing
 #
 # 2018-11-12 Version 0.1
 # Hello World
@@ -86,7 +86,7 @@ The second Python node creates a ViewSet from views or sheets passed to the inpu
 # Create ViewSet from Input
 # Version 0.1
 # Coded by Andrew King
-# https://andrewkingme.com
+# https://andrewk.ing
 #
 # 2018-11-12 Version 0.1
 # Hello World

@@ -35,7 +35,7 @@ Please note that the following Python code utilizing `.GetWarnings()` requires R
 # Get Warnings
 # Version 0.1
 # Coded by Andrew King
-# http://andrewkingme.com
+# http://andrewk.ing
 #
 # 2019-03-05 Version 0.1
 # Hello World
