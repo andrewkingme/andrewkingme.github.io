@@ -200,6 +200,23 @@ pre {
   margin: 0px;
 }
 
+/* Avatar */
+
+.image-cropper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.profile-pic {
+display: inline;
+margin: 0 auto;
+height: 100%;
+width: auto;
+}
+
 /* Lightbox */
 
 .lightbox {
