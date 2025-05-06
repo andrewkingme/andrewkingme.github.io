@@ -3,7 +3,7 @@ layout: generic
 title: /about
 ---
 
-Andrew King is a visual programmer who specializes in automating and enhancing building information modeling workflows within Autodesk Revit using Dynamo and Python.
+Andrew King is a visual programmer who specializes in automating building information modeling workflows within Autodesk Revit using Dynamo and Python.
 
 <div class="image-cropper">
     <a href="/contact/"><img src="/about/img/avatar.jpeg" alt="avatar" class="profile-pic"></a>
